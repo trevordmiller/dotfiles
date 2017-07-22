@@ -4,5 +4,6 @@ Trevor's dotfiles
 
 # Setup
 
-- Clone this repo into `~/projects`
-- Run the set up script: `~/projects/dotfiles/index`
+- Clone this repo
+- `cd` to the directory where you cloned it
+- Run the set up script: `./index`

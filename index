@@ -1,4 +1,4 @@
 echo "Symlinking dotfiles"
-for file in $(find "$HOME/projects/dotfiles/files" -depth 1 -exec basename {} \;); do
-  ln -s "$HOME/projects/dotfiles/files/$file" "$HOME/$file"
+for file in $(find "./files" -depth 1 -exec basename {} \;); do
+  ln -s "./files/$file" "$HOME/$file"
 done
