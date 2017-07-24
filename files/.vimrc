@@ -109,8 +109,8 @@ colorscheme nova
 let g:jsx_ext_required = 0
 
 " SNIPPETS
-let g:minisnip_dir = '~/projects/dotfiles/.snippets/'
-set dictionary=~/projects/dotfiles/.snippets/index.txt
+let g:minisnip_dir = '~/projects/dotfiles/files/.snippets/'
+set dictionary=~/projects/dotfiles/files/.snippets/index.txt
 
 " INLINE LINTING/TYPE CHECKING/FORMATTING
 let g:ale_linters = {
