@@ -2,8 +2,11 @@
 # PATH
 # ==================================================================
 
-SHELL_SCRIPTS_PATH="$HOME/projects/shell-scripts/scripts"		
+SHELL_SCRIPTS_PATH="$HOME/projects/shell-scripts/scripts"
 export PATH="$PATH:$SHELL_SCRIPTS_PATH"
+
+# GOOGLE CLOUD
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
 
 
 # ==================================================================
