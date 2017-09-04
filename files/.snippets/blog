@@ -1,0 +1,26 @@
+import React from 'react'
+import Screen from '../../../components/Screen'
+import { posts } from '../'
+
+const key = '{{+~expand('%:p:h:t')+}}'
+
+export default () =>
+  <Screen
+    baseRouteTitle="blog"
+    mainVisual={posts[key].mainVisual}
+    pathname={`https://trevordmiller.com/blog/${key}`}
+    title={posts[key].title}
+    description={posts[key].description}
+    showDescription
+    sections={[
+
+      {
+        title: '',
+        component: (
+          <div>
+
+          </div>
+        ),
+      },
+    ]}
+  />
