@@ -2,7 +2,7 @@
 # PATH
 # ==================================================================
 
-SHELL_SCRIPTS_PATH="$HOME/projects/shell-scripts/scripts"
+SHELL_SCRIPTS_PATH="$HOME/repos/shell-scripts/scripts"
 export PATH="$PATH:$SHELL_SCRIPTS_PATH"
 
 # GOOGLE CLOUD
