@@ -2,7 +2,9 @@
 " NATIVE CONFIG
 " ==================================================================
 
-" WINDOW NAVIGATION
+" WINDOWS
+set splitbelow
+set splitright
 nnoremap <c-h> <c-w>h
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
