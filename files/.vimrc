@@ -68,6 +68,13 @@ set backupdir=~/.vim/backup_files//
 " PERFORMANCE
 set synmaxcol=200
 
+" LEADER
+let mapleader=" "
+nnoremap <leader>e :e src/**/*
+nnoremap <leader>g :grep -r '' src<LEFT><LEFT><LEFT><LEFT><LEFT>
+nnoremap <leader>! :!clear &&<SPACE>
+nnoremap <leader>s :%s//gc<LEFT><LEFT><LEFT>
+
 
 " ==================================================================
 " PLUGIN MANAGEMENT
