@@ -2,7 +2,8 @@
 " NATIVE CONFIG
 " ==================================================================
 
-" WINDOWS
+" PANES
+set fillchars+=vert:│
 set splitbelow
 set splitright
 nnoremap <c-h> <c-w>h
