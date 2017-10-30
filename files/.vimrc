@@ -70,11 +70,14 @@ set synmaxcol=200
 
 " LEADER
 let mapleader=" "
+nnoremap <leader>E :E<CR>
 nnoremap <leader>w :w<CR>
+nnoremap <leader>v :vs<CR>
+nnoremap <leader>q :q<CR>
 nnoremap <leader>! :!clear &&<SPACE>
 nnoremap <leader>s :%s//g<LEFT><LEFT>
 nnoremap <leader>e :e src/**/*
-nnoremap <leader>g :grep -r '' src<LEFT><LEFT><LEFT><LEFT><LEFT>
+nnoremap <leader>g :silent grep -r '' src \| :redraw! \| :copen<LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT>
 nnoremap <leader>c :cfdo %s//g \| :w<LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT>
 
 
