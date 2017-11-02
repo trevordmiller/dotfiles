@@ -40,7 +40,7 @@ let g:netrw_list_hide = '^\./$,^\.\./$'
 let g:netrw_hide = 1
 let g:netrw_sort_by = 'name'
 let g:netrw_sort_direction = 'normal'
-let g:netrw_localrmdir='rm -rf'
+let g:netrw_rmdir_cmd='rm -rf'
 
 " COMMAND-LINE COMPLETION
 set wildmenu
