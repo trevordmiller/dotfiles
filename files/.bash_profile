@@ -45,4 +45,5 @@ export EDITOR="$VISUAL"
 # ==================================================================
 
 alias grep='grep -I --color=auto --exclude-dir={.git,node_modules,build,.next,__snapshots__,flow-typed,priv,deps} --exclude=package-lock.json'
+alias ls='ls -G'
 alias less='less -R'
