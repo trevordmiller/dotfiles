@@ -92,7 +92,6 @@ Plug 'hail2u/vim-css3-syntax'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'jparise/vim-graphql'
-Plug 'elixir-lang/vim-elixir'
 
 " EXTENDED % MATCHING
 Plug 'tmhedberg/matchit'
