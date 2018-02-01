@@ -95,9 +95,6 @@ Plug 'mxw/vim-jsx'
 " EXTENDED % MATCHING
 Plug 'tmhedberg/matchit'
 
-" SNIPPETS
-Plug 'KeyboardFire/vim-minisnip'
-
 " INLINE LINTING/TYPE CHECKING/FORMATTING
 Plug 'w0rp/ale'
 
@@ -117,10 +114,6 @@ colorscheme nova
 " EXTENDED LANGUAGES
 let g:jsx_ext_required = 0
 let g:javascript_plugin_flow = 1
-
-" SNIPPETS
-let g:minisnip_dir = '~/repos/dotfiles/files/.snippets/'
-set dictionary=~/repos/dotfiles/files/.snippets/index.txt
 
 " INLINE LINTING/TYPE CHECKING/FORMATTING
 let g:ale_linters = {

@@ -1,8 +1,0 @@
-/* @flow */
-import {{+~expand('%:p:h:t')+}} from '.'
-
-test('{{++}}', () => {
-  const input = {{++}}
-  const output = {{++}}
-  expect(input).toBe(output)
-})
