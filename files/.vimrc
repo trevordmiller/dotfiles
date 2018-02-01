@@ -126,6 +126,8 @@ set dictionary=~/repos/dotfiles/files/.snippets/index.txt
 " INLINE LINTING/TYPE CHECKING/FORMATTING
 let g:ale_linters = {
 \  'javascript': ['eslint', 'flow', 'prettier'],
+\  'css': ['stylelint'],
+\  'ruby': ['rubocop'],
 \}
 let g:ale_fixers = {
 \  'javascript': ['eslint', 'prettier'],
