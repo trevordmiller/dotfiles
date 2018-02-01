@@ -91,7 +91,6 @@ Plug 'othree/html5.vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
-Plug 'jparise/vim-graphql'
 
 " EXTENDED % MATCHING
 Plug 'tmhedberg/matchit'
@@ -125,12 +124,11 @@ set dictionary=~/repos/dotfiles/files/.snippets/index.txt
 
 " INLINE LINTING/TYPE CHECKING/FORMATTING
 let g:ale_linters = {
-\  'javascript': ['eslint', 'flow', 'prettier'],
+\  'javascript': ['eslint', 'flow'],
 \  'css': ['stylelint'],
 \  'ruby': ['rubocop'],
 \}
 let g:ale_fixers = {
-\  'javascript': ['eslint', 'prettier'],
+\  'javascript': ['eslint'],
 \}
-let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma es5'
 let g:ale_fix_on_save = 1

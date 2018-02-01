@@ -8,4 +8,3 @@ componentConnect
 componentFunction
 componentStyled
 componentTest
-inspect
