@@ -45,16 +45,14 @@ let g:netrw_sort_direction = 'normal'
 set wildmenu
 
 " PATTERN IGNORING
-set wildignore+=*/.git/*,*/node_modules/*,*/build/*,*/.next/*,*/__snapshots__/*,*/flow-typed/*,*/priv/*,*/deps/*,package-lock.json,*.zip,*.png,*.jpg,*.gif,*.pdf,*DS_Store*
-set grepprg=grep\ -In\ --exclude-dir={.git,node_modules,build,.next,__snapshots__,flow-typed,priv,deps}\ --exclude=package-lock.json
+set wildignore+=*/.git/*,*/node_modules/*,*/build/*,*/.next/*,*/flow-typed/*,package-lock.json,*.zip,*.png,*.jpg,*.gif,*.pdf,*DS_Store*
 
 " SPELLCHECK
 set spelllang=en
 set complete+=kspell
+autocmd FileType gitcommit setlocal spell
 autocmd BufRead,BufNewFile *.md setlocal spell
 autocmd BufRead,BufNewFile *.txt setlocal spell
-autocmd BufRead,BufNewFile */blog/* setlocal spell
-autocmd FileType gitcommit setlocal spell
 
 " CLIPBOARD
 set clipboard=unnamed
@@ -67,14 +65,6 @@ set backupdir=~/.vim/backup_files//
 
 " PERFORMANCE
 set synmaxcol=200
-
-" LEADER
-let mapleader=" "
-nnoremap <leader>! :!clear &&<SPACE>
-nnoremap <leader>s :%s//g<LEFT><LEFT>
-nnoremap <leader>e :e src/**/*
-nnoremap <leader>g :silent grep -r '' src \| :redraw!<LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT>
-nnoremap <leader>c :cfdo %s//g \| :w<LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT>
 
 
 " ==================================================================
