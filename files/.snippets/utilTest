@@ -2,5 +2,7 @@
 import {{+~expand('%:p:h:t')+}} from '.'
 
 test('{{++}}', () => {
-  expect({{++}}).{{+toBe+}}({{++}})
+  const input = {{++}}
+  const output = {{++}}
+  expect(input).toBe(output)
 })
