@@ -101,7 +101,7 @@ call plug#end()
 " ==================================================================
 " PLUGIN CONFIG
 " ==================================================================
-"
+
 " SEARCHING
 let g:ackprg = 'ag --path-to-ignore ~/.ignore --hidden --vimgrep'
 
@@ -122,3 +122,13 @@ let g:ale_fix_on_save = 1
 
 " COLOR SCHEME
 colorscheme nova
+
+
+" ==================================================================
+" LEADER SHORTCUTS
+" ==================================================================
+
+let mapleader=" "
+nnoremap <leader>e :E<cr>
+nnoremap <leader>s :Ack 
+nnoremap <leader>f :FZF<cr>
