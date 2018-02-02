@@ -1,0 +1,8 @@
+.git/
+node_modules/
+flow-typed/
+.next/
+package-lock.json
+yarn.lock
+Gemfile.lock
+.DS_Store

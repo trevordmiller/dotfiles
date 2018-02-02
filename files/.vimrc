@@ -33,19 +33,8 @@ set autoindent
 set smartindent
 set indentkeys+=O,o
 
-" DIRECTORY EXPLORER
-let g:netrw_banner = 0
-let g:netrw_liststyle = 0
-let g:netrw_list_hide = '^\./$,^\.\./$'
-let g:netrw_hide = 1
-let g:netrw_sort_by = 'name'
-let g:netrw_sort_direction = 'normal'
-
 " COMMAND-LINE COMPLETION
 set wildmenu
-
-" PATTERN IGNORING
-set wildignore+=*/.git/*,*/node_modules/*,*/build/*,*/.next/*,*/flow-typed/*,package-lock.json,*.zip,*.png,*.jpg,*.gif,*.pdf,*DS_Store*
 
 " SPELLCHECK
 set spelllang=en
@@ -66,6 +55,14 @@ set backupdir=~/.vim/backup_files//
 " PERFORMANCE
 set synmaxcol=200
 
+" EXPLORING
+let g:netrw_banner = 0
+let g:netrw_liststyle = 0
+let g:netrw_list_hide = '^\./$,^\.\./$'
+let g:netrw_hide = 1
+let g:netrw_sort_by = 'name'
+let g:netrw_sort_direction = 'normal'
+
 
 " ==================================================================
 " PLUGIN MANAGEMENT
@@ -73,8 +70,12 @@ set synmaxcol=200
 
 call plug#begin('~/.vim/plugged')
 
-" COLOR SCHEME
-Plug 'trevordmiller/nova-vim'
+" SEARCHING
+Plug 'mileszs/ack.vim'
+
+" FUZZY FINDING
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 
 " EXTENDED LANGUAGES
 Plug 'othree/html5.vim'
@@ -91,15 +92,18 @@ Plug 'w0rp/ale'
 " TIME TRACKING
 Plug 'wakatime/vim-wakatime'
 
+" COLOR SCHEME
+Plug 'trevordmiller/nova-vim'
+
 call plug#end()
 
 
 " ==================================================================
 " PLUGIN CONFIG
 " ==================================================================
-
-" COLOR SCHEME
-colorscheme nova
+"
+" SEARCHING
+let g:ackprg = 'ag --path-to-ignore ~/.ignore --hidden --vimgrep'
 
 " EXTENDED LANGUAGES
 let g:jsx_ext_required = 0
@@ -115,3 +119,6 @@ let g:ale_fixers = {
 \  'javascript': ['eslint'],
 \}
 let g:ale_fix_on_save = 1
+
+" COLOR SCHEME
+colorscheme nova

@@ -35,3 +35,11 @@ set -o vi
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+
+# ==================================================================
+# PACKAGE CONFIG
+# ==================================================================
+
+alias ag='ag --path-to-ignore ~/.ignore --hidden'
+export FZF_DEFAULT_COMMAND='ag --path-to-ignore ~/.ignore --hidden -g ""'
