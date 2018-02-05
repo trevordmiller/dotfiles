@@ -4,6 +4,7 @@
 
 SHELL_SCRIPTS_PATH="$HOME/repos/shell-scripts/scripts"
 export PATH="$PATH:$SHELL_SCRIPTS_PATH"
+eval "$(rbenv init -)"
 
 
 # ==================================================================
