@@ -130,5 +130,5 @@ colorscheme nova
 
 let mapleader=" "
 nnoremap <leader>e :E<cr>
-nnoremap <leader>s :Ack 
+nnoremap <leader>s :Ack ""<Left>
 nnoremap <leader>f :FZF<cr>
