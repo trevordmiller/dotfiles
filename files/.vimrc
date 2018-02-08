@@ -55,20 +55,15 @@ set backupdir=~/.vim/backup_files//
 " PERFORMANCE
 set synmaxcol=200
 
-" EXPLORING
-let g:netrw_banner = 0
-let g:netrw_liststyle = 0
-let g:netrw_list_hide = '^\./$,^\.\./$'
-let g:netrw_hide = 1
-let g:netrw_sort_by = 'name'
-let g:netrw_sort_direction = 'normal'
-
 
 " ==================================================================
 " PLUGIN MANAGEMENT
 " ==================================================================
 
 call plug#begin('~/.vim/plugged')
+
+" EXPLORING
+" netrw - included with vim
 
 " SEARCHING
 Plug 'mileszs/ack.vim'
@@ -102,6 +97,14 @@ call plug#end()
 " PLUGIN CONFIG
 " ==================================================================
 
+" EXPLORING
+let g:netrw_banner = 0
+let g:netrw_liststyle = 0
+let g:netrw_list_hide = '^\./$,^\.\./$'
+let g:netrw_hide = 1
+let g:netrw_sort_by = 'name'
+let g:netrw_sort_direction = 'normal'
+
 " SEARCHING
 let g:ackprg = 'ag --path-to-ignore ~/.ignore --hidden --vimgrep'
 let g:ack_autoclose=1
@@ -130,6 +133,12 @@ colorscheme nova
 " ==================================================================
 
 let mapleader=" "
+
+" EXPLORING
 nnoremap <leader>e :E<cr>
+
+" SEARCHING
 nnoremap <leader>s :Ack ""<Left>
+
+" FUZZY FINDING
 nnoremap <leader>f :FZF<cr>
