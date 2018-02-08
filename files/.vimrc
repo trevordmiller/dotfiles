@@ -104,6 +104,7 @@ call plug#end()
 
 " SEARCHING
 let g:ackprg = 'ag --path-to-ignore ~/.ignore --hidden --vimgrep'
+let g:ack_autoclose=1
 
 " EXTENDED LANGUAGES
 let g:jsx_ext_required = 0
