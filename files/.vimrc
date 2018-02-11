@@ -24,13 +24,17 @@ set scrolloff=5
 
 " TABS
 set backspace=indent,eol,start
-set shiftwidth=2
-set softtabstop=2
-set expandtab
-set smarttab
 set autoindent
 set smartindent
 set indentkeys+=O,o
+set smarttab
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+augroup PythonTabOverrides
+  autocmd!
+  autocmd Filetype python setlocal shiftwidth=4 softtabstop=4
+augroup END
 
 " COMMAND-LINE COMPLETION
 set wildmenu
@@ -110,9 +114,11 @@ let g:ale_linters = {
 \  'javascript': ['eslint', 'flow'],
 \  'css': ['stylelint'],
 \  'ruby': ['rubocop'],
+\  'python': ['pylint'],
 \}
 let g:ale_fixers = {
 \  'javascript': ['eslint'],
+\  'python': ['yapf'],
 \}
 let g:ale_fix_on_save = 1
 
