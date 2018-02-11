@@ -111,15 +111,16 @@ let g:javascript_plugin_flow = 1
 
 " INLINE LINTING/TYPE CHECKING/FORMATTING
 let g:ale_linters = {
-\  'javascript': ['eslint', 'flow'],
 \  'css': ['stylelint'],
+\  'javascript': ['eslint', 'flow'],
 \  'ruby': ['rubocop'],
 \  'python': ['pylint'],
 \}
 let g:ale_fixers = {
-\  'javascript': ['eslint'],
+\  'javascript': ['eslint', 'prettier'],
 \  'python': ['yapf'],
 \}
+let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma es5'
 let g:ale_fix_on_save = 1
 
 " COLOR SCHEME
