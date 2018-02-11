@@ -2,7 +2,7 @@
 " NATIVE CONFIG
 " ==================================================================
 
-" PANES
+" SPLITS
 set fillchars+=vert:│
 set splitbelow
 set splitright
@@ -24,11 +24,10 @@ set scrolloff=5
 
 " TABS
 set backspace=indent,eol,start
-set smarttab
-set expandtab
-set tabstop=2
-set softtabstop=2
 set shiftwidth=2
+set softtabstop=2
+set expandtab
+set smarttab
 set autoindent
 set smartindent
 set indentkeys+=O,o
@@ -36,15 +35,8 @@ set indentkeys+=O,o
 " COMMAND-LINE COMPLETION
 set wildmenu
 
-" SPELLCHECK
-set spelllang=en
-set complete+=kspell
-autocmd FileType gitcommit setlocal spell
-autocmd BufRead,BufNewFile *.md setlocal spell
-autocmd BufRead,BufNewFile *.txt setlocal spell
-
 " CLIPBOARD
-set clipboard=unnamed
+set clipboard^=unnamed
 
 " HISTORY
 set undofile
