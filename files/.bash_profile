@@ -2,8 +2,9 @@
 # PATH
 # ==================================================================
 
+HOMEBREW_PATH=/usr/local/bin:/usr/local/sbin
 SHELL_SCRIPTS_PATH="$HOME/repos/shell-scripts/scripts"
-export PATH="$PATH:$SHELL_SCRIPTS_PATH"
+export PATH="$HOMEBREW_PATH:$SHELL_SCRIPTS_PATH:$PATH"
 eval "$(rbenv init -)"
 
 
