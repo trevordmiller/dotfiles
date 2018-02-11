@@ -111,13 +111,13 @@ let g:javascript_plugin_flow = 1
 
 " INLINE LINTING/TYPE CHECKING/FORMATTING
 let g:ale_linters = {
-\  'css': ['stylelint'],
 \  'javascript': ['eslint', 'flow'],
 \  'ruby': ['rubocop'],
 \  'python': ['pylint'],
 \}
 let g:ale_fixers = {
 \  'javascript': ['eslint', 'prettier'],
+\  'ruby': ['rubocop'],
 \  'python': ['yapf'],
 \}
 let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma es5'
