@@ -25,8 +25,6 @@ set scrolloff=5
 " TABS
 set backspace=indent,eol,start
 set autoindent
-set smartindent
-set indentkeys+=O,o
 set smarttab
 set expandtab
 set shiftwidth=2
