@@ -3,29 +3,16 @@
 " ==================================================================
 
 " SPLITS
-set fillchars+=vert:│
-set splitbelow
-set splitright
 nnoremap <c-h> <c-w>h
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
 
-" STATUS
-set laststatus=2
-
-" SEARCH
-set incsearch
-
 " LINES
 set number
 set cursorline
-set scrolloff=5
 
-" TABS
-set backspace=indent,eol,start
-set autoindent
-set smarttab
+" INDENTATION
 set expandtab
 set shiftwidth=2
 set softtabstop=2
@@ -33,9 +20,6 @@ augroup PythonTabOverrides
   autocmd!
   autocmd Filetype python setlocal shiftwidth=4 softtabstop=4
 augroup END
-
-" COMMAND-LINE COMPLETION
-set wildmenu
 
 " CLIPBOARD
 set clipboard^=unnamed
@@ -55,6 +39,9 @@ set synmaxcol=200
 " ==================================================================
 
 call plug#begin('~/.vim/plugged')
+
+" DEFAULTS
+Plug 'tpope/vim-sensible'
 
 " EXPLORING
 " netrw - included with vim
