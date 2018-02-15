@@ -59,9 +59,6 @@ Plug 'hail2u/vim-css3-syntax'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 
-" EXTENDED % MATCHING
-Plug 'tmhedberg/matchit'
-
 " INLINE LINTING/TYPE CHECKING/FORMATTING
 Plug 'w0rp/ale'
 
