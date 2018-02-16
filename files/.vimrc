@@ -101,6 +101,9 @@ let g:ale_fixers = {
 \  'python': ['yapf'],
 \  'ruby': ['rubocop'],
 \  'javascript': ['eslint', 'prettier'],
+\  'json': ['prettier'],
+\  'css': ['prettier'],
+\  'markdown': ['prettier'],
 \}
 let g:ale_fix_on_save = 1
 let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma es5'
