@@ -54,10 +54,10 @@ Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
 " EXTENDED LANGUAGES
-Plug 'othree/html5.vim'
-Plug 'hail2u/vim-css3-syntax'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug 'othree/html5.vim'
+Plug 'hail2u/vim-css3-syntax'
 
 " INLINE LINTING/TYPE CHECKING/FORMATTING
 Plug 'w0rp/ale'
@@ -88,22 +88,22 @@ let g:ackprg = 'ag --path-to-ignore ~/.ignore --hidden --vimgrep'
 let g:ack_autoclose=1
 
 " EXTENDED LANGUAGES
-let g:jsx_ext_required = 0
 let g:javascript_plugin_flow = 1
+let g:jsx_ext_required = 0
 
 " INLINE LINTING/TYPE CHECKING/FORMATTING
 let g:ale_linters = {
-\  'javascript': ['eslint', 'flow'],
-\  'ruby': ['rubocop'],
 \  'python': ['pylint'],
+\  'ruby': ['rubocop'],
+\  'javascript': ['eslint', 'flow'],
 \}
 let g:ale_fixers = {
-\  'javascript': ['eslint', 'prettier'],
-\  'ruby': ['rubocop'],
 \  'python': ['yapf'],
+\  'ruby': ['rubocop'],
+\  'javascript': ['eslint', 'prettier'],
 \}
-let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma es5'
 let g:ale_fix_on_save = 1
+let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma es5'
 
 " COLOR SCHEME
 colorscheme nova
