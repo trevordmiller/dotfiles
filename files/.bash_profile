@@ -45,3 +45,4 @@ export EDITOR="$VISUAL"
 alias ag='ag --path-to-ignore ~/.ignore --hidden'
 export FZF_DEFAULT_COMMAND='ag --path-to-ignore ~/.ignore --hidden -g ""'
 eval "$(rbenv init -)"
+. /usr/local/etc/bash_completion
