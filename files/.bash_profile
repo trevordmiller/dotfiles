@@ -5,7 +5,6 @@
 HOMEBREW_PATH=/usr/local/bin:/usr/local/sbin
 SHELL_SCRIPTS_PATH="$HOME/repos/shell-scripts/scripts"
 export PATH="$HOMEBREW_PATH:$SHELL_SCRIPTS_PATH:$PATH"
-eval "$(rbenv init -)"
 
 
 # ==================================================================
@@ -45,3 +44,4 @@ export EDITOR="$VISUAL"
 
 alias ag='ag --path-to-ignore ~/.ignore --hidden'
 export FZF_DEFAULT_COMMAND='ag --path-to-ignore ~/.ignore --hidden -g ""'
+eval "$(rbenv init -)"
