@@ -62,6 +62,9 @@ Plug 'hail2u/vim-css3-syntax'
 " INLINE LINTING/TYPE CHECKING/FORMATTING
 Plug 'w0rp/ale'
 
+" SNIPPETS
+Plug 'KeyboardFire/vim-minisnip'
+
 " TIME TRACKING
 Plug 'wakatime/vim-wakatime'
 
@@ -107,6 +110,9 @@ let g:ale_fixers = {
 \}
 let g:ale_fix_on_save = 1
 let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma es5'
+
+" SNIPPETS
+let g:minisnip_dir = '~/.snippets/'
 
 " COLOR SCHEME
 colorscheme nova
