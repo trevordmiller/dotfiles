@@ -131,3 +131,9 @@ nnoremap <leader>s :Ack ""<Left>
 
 " FUZZY FINDING
 nnoremap <leader>f :FZF<cr>
+
+" RECENT FILES
+nnoremap <leader>r :Buffer<cr>
+
+" COMMAND HISTORY
+nnoremap <leader>: :History:<cr>
