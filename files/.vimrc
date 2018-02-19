@@ -54,10 +54,7 @@ Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
 " EXTENDED LANGUAGES
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'othree/html5.vim'
-Plug 'hail2u/vim-css3-syntax'
+Plug 'sheerun/vim-polyglot'
 
 " INLINE LINTING/TYPE CHECKING/FORMATTING
 Plug 'w0rp/ale'
@@ -91,8 +88,8 @@ let g:ackprg = 'ag --path-to-ignore ~/.ignore --hidden --vimgrep'
 let g:ack_autoclose=1
 
 " EXTENDED LANGUAGES
-let g:javascript_plugin_flow = 1
 let g:jsx_ext_required = 0
+let g:javascript_plugin_flow = 1
 
 " INLINE LINTING/TYPE CHECKING/FORMATTING
 let g:ale_linters = {
