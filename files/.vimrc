@@ -1,5 +1,5 @@
 " ==================================================================
-" NATIVE CONFIG
+" CORE
 " ==================================================================
 
 " SPLITS
@@ -35,7 +35,7 @@ set synmaxcol=200
 
 
 " ==================================================================
-" PLUGIN MANAGEMENT
+" PLUGINS
 " ==================================================================
 
 call plug#begin('~/.vim/plugged')
@@ -43,24 +43,24 @@ call plug#begin('~/.vim/plugged')
 " DEFAULTS
 Plug 'tpope/vim-sensible'
 
-" EXPLORING
+" LANGUAGES
+Plug 'sheerun/vim-polyglot'
+
+" EXPLORE
 " netrw - included with vim
 
-" SEARCHING
+" SEARCH
 Plug 'mileszs/ack.vim'
 
-" FUZZY FINDING
+" FUZZY FIND
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
-" EXTENDED LANGUAGES
-Plug 'sheerun/vim-polyglot'
-
-" INLINE LINTING/TYPE CHECKING/FORMATTING
-Plug 'w0rp/ale'
-
 " SNIPPETS
 Plug 'KeyboardFire/vim-minisnip'
+
+" QUALITY CONTROL
+Plug 'w0rp/ale'
 
 " TIME TRACKING
 Plug 'wakatime/vim-wakatime'
@@ -75,7 +75,11 @@ call plug#end()
 " PLUGIN CONFIG
 " ==================================================================
 
-" EXPLORING
+" LANGUAGES
+let g:jsx_ext_required = 0
+let g:javascript_plugin_flow = 1
+
+" EXPLORE
 let g:netrw_banner = 0
 let g:netrw_liststyle = 0
 let g:netrw_list_hide = '^\./$,^\.\./$'
@@ -83,15 +87,14 @@ let g:netrw_hide = 1
 let g:netrw_sort_by = 'name'
 let g:netrw_sort_direction = 'normal'
 
-" SEARCHING
+" SEARCH
 let g:ackprg = 'ag --path-to-ignore ~/.ignore --hidden --vimgrep'
 let g:ack_autoclose=1
 
-" EXTENDED LANGUAGES
-let g:jsx_ext_required = 0
-let g:javascript_plugin_flow = 1
+" SNIPPETS
+let g:minisnip_dir = '~/.snippets/'
 
-" INLINE LINTING/TYPE CHECKING/FORMATTING
+" QUALITY CONTROL
 let g:ale_linters = {
 \  'python': ['pylint'],
 \  'ruby': ['rubocop'],
@@ -107,30 +110,17 @@ let g:ale_fixers = {
 \}
 let g:ale_fix_on_save = 1
 
-" SNIPPETS
-let g:minisnip_dir = '~/.snippets/'
-
 " COLOR SCHEME
 colorscheme nova
 
 
 " ==================================================================
-" LEADER SHORTCUTS
+" SHORTCUTS
 " ==================================================================
 
 let mapleader=" "
-
-" EXPLORING
 nnoremap <leader>e :E<cr>
-
-" SEARCHING
 nnoremap <leader>s :Ack ""<Left>
-
-" FUZZY FINDING
 nnoremap <leader>f :FZF<cr>
-
-" RECENT FILES
 nnoremap <leader>r :Buffer<cr>
-
-" COMMAND HISTORY
 nnoremap <leader>: :History:<cr>
