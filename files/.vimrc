@@ -43,9 +43,6 @@ Plug 'sheerun/vim-polyglot'
 " EXPLORE
 " netrw - included with vim
 
-" SEARCH
-Plug 'mileszs/ack.vim'
-
 " FUZZY FIND
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
@@ -81,10 +78,6 @@ let g:netrw_hide = 1
 let g:netrw_sort_by = 'name'
 let g:netrw_sort_direction = 'normal'
 
-" SEARCH
-let g:ackprg = 'ag --path-to-ignore ~/.ignore --hidden --vimgrep'
-let g:ack_autoclose=1
-
 " SNIPPETS
 let g:minisnip_dir = '~/.snippets/'
 
@@ -114,7 +107,7 @@ colorscheme nova
 
 let mapleader=" "
 nnoremap <leader>e :E<cr>
-nnoremap <leader>s :Ack ""<Left>
+nnoremap <leader>s :Ag<cr>
 nnoremap <leader>f :FZF<cr>
 nnoremap <leader>r :Buffer<cr>
 nnoremap <leader>: :History:<cr>
