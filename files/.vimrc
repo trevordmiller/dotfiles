@@ -15,6 +15,9 @@ augroup PythonTabOverrides
   autocmd Filetype python setlocal shiftwidth=4 softtabstop=4
 augroup END
 
+" GREP
+set grepprg=ag\ --nogroup\ --nocolor\ --path-to-ignore\ ~/.ignore\ --hidden
+
 " CLIPBOARD
 set clipboard^=unnamed
 
