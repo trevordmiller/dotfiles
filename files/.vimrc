@@ -69,9 +69,6 @@ call plug#end()
 " PLUGIN CONFIG
 " ==================================================================
 
-" DEFAULTS
-set noruler
-
 " LANGUAGES
 let g:javascript_plugin_flow = 1
 
