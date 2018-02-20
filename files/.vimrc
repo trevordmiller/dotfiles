@@ -5,6 +5,7 @@
 " LINES
 set number
 set cursorline
+set noruler
 
 " INDENTATION
 set expandtab
