@@ -5,7 +5,6 @@
 " LINES
 set number
 set cursorline
-set noruler
 
 " INDENTATION
 set expandtab
@@ -66,6 +65,9 @@ call plug#end()
 " ==================================================================
 " PLUGIN CONFIG
 " ==================================================================
+
+" DEFAULTS
+set noruler
 
 " LANGUAGES
 let g:javascript_plugin_flow = 1
