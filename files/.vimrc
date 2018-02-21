@@ -1,4 +1,61 @@
 " ==================================================================
+" PLUGINS
+" ==================================================================
+
+" VIM-PLUG
+call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-sensible'
+Plug 'trevordmiller/nova-vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'w0rp/ale'
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-vinegar'
+Plug 'KeyboardFire/vim-minisnip'
+Plug 'wakatime/vim-wakatime'
+call plug#end()
+
+" NOVA-VIM
+colorscheme nova
+
+" VIM-POLYGLOT
+let g:javascript_plugin_flow = 1
+
+" ALE
+let g:ale_linters = {
+\  'python': ['pylint'],
+\  'ruby': ['rubocop'],
+\  'javascript': ['eslint', 'flow'],
+\}
+let g:ale_fixers = {
+\  'python': ['yapf'],
+\  'ruby': ['rubocop'],
+\  'javascript': ['eslint', 'prettier'],
+\  'json': ['prettier'],
+\  'css': ['prettier'],
+\  'markdown': ['prettier'],
+\}
+let g:ale_fix_on_save = 1
+
+" FZF
+" Relies on FZF_DEFAULT_COMMAND set in ~/.bash_profile
+
+" VIM-MINISNIP
+let g:minisnip_dir = '~/.snippets/'
+
+" VIM-WAKATIME
+" Relies on config set in ~/.wakatime.cfg
+
+" SHORTCUTS
+let mapleader=" "
+nnoremap <leader>f :FZF<cr>
+nnoremap <leader>s :Ag<cr>
+nnoremap <leader>r :Buffer<cr>
+nnoremap <leader>: :History:<cr>
+nnoremap <leader>e :Explore<cr>
+
+
+" ==================================================================
 " CORE
 " ==================================================================
 
@@ -15,98 +72,14 @@ augroup PythonTabOverrides
   autocmd Filetype python setlocal shiftwidth=4 softtabstop=4
 augroup END
 
-" CLIPBOARD
-set clipboard^=unnamed
-
 " HISTORY
 set undofile
 set undodir=~/.vim/undo_files//
 set directory=~/.vim/swap_files//
 set backupdir=~/.vim/backup_files//
 
+" CLIPBOARD
+set clipboard^=unnamed
+
 " PERFORMANCE
 set synmaxcol=200
-
-
-" ==================================================================
-" PLUGINS
-" ==================================================================
-
-call plug#begin('~/.vim/plugged')
-
-" DEFAULTS
-Plug 'tpope/vim-sensible'
-
-" LANGUAGES
-Plug 'sheerun/vim-polyglot'
-
-" EXPLORE
-" netrw - included with vim
-
-" FUZZY FIND
-Plug '/usr/local/opt/fzf'
-Plug 'junegunn/fzf.vim'
-
-" SNIPPETS
-Plug 'KeyboardFire/vim-minisnip'
-
-" QUALITY CONTROL
-Plug 'w0rp/ale'
-
-" TIME TRACKING
-Plug 'wakatime/vim-wakatime'
-
-" COLOR SCHEME
-Plug 'trevordmiller/nova-vim'
-
-call plug#end()
-
-
-" ==================================================================
-" PLUGIN CONFIG
-" ==================================================================
-
-" LANGUAGES
-let g:javascript_plugin_flow = 1
-
-" EXPLORE
-let g:netrw_banner = 0
-let g:netrw_liststyle = 0
-let g:netrw_list_hide = '^\./$,^\.\./$'
-let g:netrw_hide = 1
-let g:netrw_sort_by = 'name'
-let g:netrw_sort_direction = 'normal'
-
-" SNIPPETS
-let g:minisnip_dir = '~/.snippets/'
-
-" QUALITY CONTROL
-let g:ale_linters = {
-\  'python': ['pylint'],
-\  'ruby': ['rubocop'],
-\  'javascript': ['eslint', 'flow'],
-\}
-let g:ale_fixers = {
-\  'python': ['yapf'],
-\  'ruby': ['rubocop'],
-\  'javascript': ['eslint', 'prettier'],
-\  'json': ['prettier'],
-\  'css': ['prettier'],
-\  'markdown': ['prettier'],
-\}
-let g:ale_fix_on_save = 1
-
-" COLOR SCHEME
-colorscheme nova
-
-
-" ==================================================================
-" SHORTCUTS
-" ==================================================================
-
-let mapleader=" "
-nnoremap <leader>e :E<cr>
-nnoremap <leader>s :Ag<cr>
-nnoremap <leader>f :FZF<cr>
-nnoremap <leader>r :Buffer<cr>
-nnoremap <leader>: :History:<cr>
