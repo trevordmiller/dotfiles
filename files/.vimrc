@@ -38,7 +38,7 @@ let g:ale_fixers = {
 let g:ale_fix_on_save = 1
 
 " FZF
-" Relies on FZF_DEFAULT_COMMAND set in ~/.bash_profile
+let $FZF_DEFAULT_COMMAND = 'ag --path-to-ignore ~/.ignore --hidden -g ""'
 
 " VIM-MINISNIP
 let g:minisnip_dir = '~/.snippets/'
