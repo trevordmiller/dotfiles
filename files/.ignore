@@ -1,9 +1,16 @@
+# OS
+.DS_Store
+
+# GIT
 .git/
+
+# JAVASCRIPT
 node_modules/
-flow-typed/
-.next/
 package-lock.json
 yarn.lock
+flow-typed/
+.next/
+
+# RUBY
 Gemfile.lock
-.DS_Store
 vendor/
