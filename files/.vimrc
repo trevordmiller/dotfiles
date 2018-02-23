@@ -50,7 +50,7 @@ let g:minisnip_dir = '~/.snippets/'
 " SHORTCUTS
 let mapleader=" "
 nnoremap <leader>f :FZF<cr>
-nnoremap <leader>s :Ag<space>
+nnoremap <leader>/ :Ag<space>
 nnoremap <leader>r :Buffers<cr>
 nnoremap <leader>: :History:<cr>
 nnoremap <leader>e :Explore<cr>
