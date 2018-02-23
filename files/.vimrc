@@ -48,7 +48,7 @@ let g:minisnip_dir = '~/.snippets/'
 " Relies on config set in ~/.wakatime.cfg
 
 " SHORTCUTS
-let mapleader=" "
+let mapleader=' '
 nnoremap <leader>f :FZF<cr>
 nnoremap <leader>/ :Ag<space>
 nnoremap <leader>r :Buffers<cr>
