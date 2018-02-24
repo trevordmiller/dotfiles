@@ -1,11 +1,11 @@
---exclude=.git/*
+--exclude=.git
 --exclude=.DS_Store
 
---exclude=node_modules/*
+--exclude=node_modules
 --exclude=package-lock.json
 --exclude=yarn.lock
 --exclude=flow-typed
---exclude=.next/*
+--exclude=.next
 
 --exclude=Gemfile.lock
---exclude=vendor/*
+--exclude=vendor
