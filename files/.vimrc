@@ -48,6 +48,7 @@ nnoremap <leader>f :FZF<cr>
 nnoremap <leader>/ :Ag<space>
 nnoremap <leader>r :Buffers<cr>
 nnoremap <leader>: :History:<cr>
+nnoremap <leader>s :Snippets<cr>
 nnoremap <leader>e :Explore<cr>
 
 
