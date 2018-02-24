@@ -11,7 +11,7 @@ Plug 'w0rp/ale'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-vinegar'
-Plug 'KeyboardFire/vim-minisnip'
+Plug 'SirVer/ultisnips'
 Plug 'wakatime/vim-wakatime'
 call plug#end()
 
@@ -41,12 +41,6 @@ let g:ale_fix_on_save = 1
 let $FZF_DEFAULT_COMMAND = 'ag --path-to-ignore ~/.ignore --hidden -g ""'
 command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, '--path-to-ignore ~/.ignore --hidden', <bang>0)
 
-" VIM-MINISNIP
-let g:minisnip_dir = '~/.snippets/'
-
-" VIM-WAKATIME
-" Relies on config set in ~/.wakatime.cfg
-
 " SHORTCUTS
 let mapleader=' '
 nnoremap <leader>f :FZF<cr>
@@ -54,6 +48,7 @@ nnoremap <leader>/ :Ag<space>
 nnoremap <leader>r :Buffers<cr>
 nnoremap <leader>: :History:<cr>
 nnoremap <leader>e :Explore<cr>
+nnoremap <leader>s :Snippets<cr>
 
 
 " ==================================================================

@@ -1,4 +1,7 @@
 echo "Symlinking dotfiles"
+
 for file in $(find "./files" -depth 1 -exec basename {} \;); do
   ln -s "$(pwd)/files/$file" "$HOME/$file"
 done
+
+ln -s "$(pwd)/files/.vim/"* "$HOME/.vim"
