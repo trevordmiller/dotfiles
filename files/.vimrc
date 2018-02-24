@@ -12,6 +12,7 @@ Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-vinegar'
 Plug 'SirVer/ultisnips'
+Plug 'ludovicchabant/vim-gutentags'
 Plug 'wakatime/vim-wakatime'
 call plug#end()
 
@@ -49,6 +50,7 @@ nnoremap <leader>r :Buffers<cr>
 nnoremap <leader>: :History:<cr>
 nnoremap <leader>e :Explore<cr>
 nnoremap <leader>s :Snippets<cr>
+nnoremap <leader>t :Tags<cr>
 
 
 " ==================================================================

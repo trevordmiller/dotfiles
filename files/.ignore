@@ -1,8 +1,9 @@
-# OS
-.DS_Store
-
-# GIT
+# GENERAL
 .git/
+tags
+tags.temp
+tags.lock
+.DS_Store
 
 # JAVASCRIPT
 node_modules/
