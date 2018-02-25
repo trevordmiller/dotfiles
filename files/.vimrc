@@ -64,10 +64,7 @@ set cursorline
 set expandtab
 set shiftwidth=2
 set softtabstop=2
-augroup PythonTabOverrides
-  autocmd!
-  autocmd Filetype python setlocal shiftwidth=4 softtabstop=4
-augroup END
+" Language specific indentation settings are in .vim/ftplugin/*
 
 " HISTORY
 set undofile
