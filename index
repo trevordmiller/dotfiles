@@ -1,7 +1,27 @@
+#!/bin/bash
+set -euo pipefail
+
 echo "Symlinking dotfiles"
 
-for file in $(find "./files" -depth 1 -exec basename {} \;); do
-  ln -s "$(pwd)/files/$file" "$HOME/$file"
+root_files=(
+  ".bash_profile"
+  ".eslintrc.json"
+  ".gitconfig"
+  ".gitignore_global"
+  ".hushlogin"
+  ".ignore"
+  ".prettierrc.json"
+  ".tmux.conf"
+  ".vimrc"
+  "com.googlecode.iterm2.plist"
+)
+for root_file in "${root_files[@]}"; do
+  ln -s "$(pwd)/files/$root_file" "$HOME/$root_file"
 done
 
-ln -s "$(pwd)/files/.vim/"* "$HOME/.vim"
+root_directories=(
+  ".vim/"
+)
+for root_directory in "${root_directories[@]}"; do
+  ln -s "$(pwd)/files/$root_directory"* "$HOME/$root_directory"
+done
