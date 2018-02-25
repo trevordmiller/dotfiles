@@ -4,7 +4,9 @@
 
 HOMEBREW_PATH=/usr/local/bin:/usr/local/sbin
 SHELL_SCRIPTS_PATH="$HOME/repos/shell-scripts/scripts"
-export PATH="$HOMEBREW_PATH:$SHELL_SCRIPTS_PATH:$PATH"
+export GOROOT=/usr/local/opt/go/libexec
+export GOPATH=$HOME/go
+export PATH="$HOMEBREW_PATH:$SHELL_SCRIPTS_PATH:$GOROOT/bin:$GOPATH/bin:$PATH"
 
 
 # ==================================================================
