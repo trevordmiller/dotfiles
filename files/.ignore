@@ -5,13 +5,13 @@ tags.temp
 tags.lock
 .DS_Store
 
+# RUBY
+Gemfile.lock
+vendor/
+
 # JAVASCRIPT
 node_modules/
 package-lock.json
 yarn.lock
 flow-typed/
 .next/
-
-# RUBY
-Gemfile.lock
-vendor/
