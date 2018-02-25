@@ -24,11 +24,13 @@ let g:javascript_plugin_flow = 1
 
 " ALE
 let g:ale_linters = {
+\  'go': ['go vet'],
 \  'python': ['pylint'],
 \  'ruby': ['rubocop'],
 \  'javascript': ['eslint', 'flow'],
 \}
 let g:ale_fixers = {
+\  'go': ['gofmt'],
 \  'python': ['yapf'],
 \  'ruby': ['rubocop'],
 \  'javascript': ['eslint', 'prettier'],
