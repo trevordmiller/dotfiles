@@ -39,14 +39,6 @@ let g:ale_fixers = {
 \  'markdown': ['prettier'],
 \}
 let g:ale_fix_on_save = 1
-let g:ale_pattern_options = {
-\  'repos/edgar': {
-\    'ale_fixers': {
-\      'ruby': ['rubocop'],
-\      'javascript': ['eslint'],
-\    }
-\  },
-\}
 
 " FZF
 let $FZF_DEFAULT_COMMAND = 'ag --path-to-ignore ~/.ignore --hidden -g ""'
