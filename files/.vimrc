@@ -40,7 +40,7 @@ let g:ale_fixers = {
 \}
 let g:ale_fix_on_save = 1
 let g:ale_pattern_options = {
-\  'edgar': {'ale_fixers': []},
+\  'edgar': {'ale_fix_on_save': 0},
 \}
 
 " FZF
