@@ -4,6 +4,7 @@
 
 # RUBY
 --exclude=vendor
+--exclude=public
 --exclude=Gemfile.lock
 
 # JAVASCRIPT

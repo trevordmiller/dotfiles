@@ -7,6 +7,7 @@ tags.temp
 
 # RUBY
 vendor/
+public/
 Gemfile.lock
 
 # JAVASCRIPT
