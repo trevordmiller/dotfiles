@@ -27,13 +27,13 @@ let g:ale_linters = {
 \  'go': ['go vet', 'golint'],
 \  'python': ['pylint'],
 \  'ruby': ['rubocop'],
-\  'javascript': ['eslint', 'flow'],
+\  'javascript': ['flow', 'eslint'],
 \}
 let g:ale_fixers = {
 \  'go': ['gofmt'],
 \  'python': ['yapf'],
 \  'ruby': ['rubocop'],
-\  'javascript': ['eslint', 'prettier'],
+\  'javascript': ['prettier', 'eslint'],
 \  'json': ['prettier'],
 \  'css': ['prettier'],
 \  'markdown': ['prettier'],
