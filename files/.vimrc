@@ -5,8 +5,8 @@
 " VIM-PLUG
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
-Plug 'trevordmiller/nova-vim'
 Plug 'sheerun/vim-polyglot'
+Plug 'trevordmiller/nova-vim'
 Plug 'w0rp/ale'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
@@ -16,11 +16,11 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'wakatime/vim-wakatime'
 call plug#end()
 
-" NOVA-VIM
-colorscheme nova
-
 " VIM-POLYGLOT
 let g:javascript_plugin_flow = 1
+
+" NOVA-VIM
+colorscheme nova
 
 " ALE
 let g:ale_linters = {
