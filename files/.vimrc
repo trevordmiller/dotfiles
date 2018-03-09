@@ -40,6 +40,17 @@ let g:ale_fixers = {
 \}
 let g:ale_echo_msg_format = '[%linter%] %s'
 let g:ale_fix_on_save = 1
+let g:ale_pattern_options = {
+\  'repos/edgar': {
+\    'ale_fixers': {
+\      'ruby': [],
+\      'javascript': ['eslint'],
+\      'json': [],
+\      'css': [],
+\      'markdown': [],
+\    }
+\  },
+\}
 
 " FZF
 let $FZF_DEFAULT_COMMAND = 'ag --path-to-ignore ~/.ignore --hidden -g ""'
