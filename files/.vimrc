@@ -5,6 +5,7 @@
 " VIM-PLUG
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-sleuth'
 Plug 'sheerun/vim-polyglot'
 Plug 'trevordmiller/nova-vim'
 Plug 'w0rp/ale'
@@ -76,12 +77,6 @@ nnoremap <leader>e :Explore<cr>
 " LINES
 set number
 set cursorline
-
-" INDENTATION
-set expandtab
-set shiftwidth=2
-set softtabstop=2
-" Language specific indentation settings are in .vim/ftplugin/*
 
 " HISTORY
 set undofile
