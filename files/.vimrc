@@ -23,13 +23,17 @@ let g:javascript_plugin_flow = 1
 colorscheme nova
 
 " ALE
+let g:ale_echo_msg_format = '[%linter%] %s'
 let g:ale_linters = {
+\  'sh': ['shell'],
 \  'go': ['go vet', 'golint'],
 \  'python': ['pylint'],
 \  'ruby': ['rubocop'],
 \  'javascript': ['flow', 'eslint'],
 \}
+let g:ale_fix_on_save = 1
 let g:ale_fixers = {
+\  'sh': ['shfmt'],
 \  'go': ['gofmt'],
 \  'python': ['yapf'],
 \  'ruby': ['rubocop'],
@@ -38,11 +42,10 @@ let g:ale_fixers = {
 \  'css': ['prettier'],
 \  'markdown': ['prettier'],
 \}
-let g:ale_echo_msg_format = '[%linter%] %s'
-let g:ale_fix_on_save = 1
 let g:ale_pattern_options = {
 \  'repos/edgar': {
 \    'ale_fixers': {
+\      'sh': [],
 \      'ruby': [],
 \      'javascript': ['eslint'],
 \      'json': [],
