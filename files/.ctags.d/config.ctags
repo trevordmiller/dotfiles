@@ -3,8 +3,9 @@
 --exclude=.DS_Store
 --exclude=public
 
-# GO
+# STATIC
 --exclude=themes
+--exclude=static
 
 # RUBY
 --exclude=vendor
@@ -13,6 +14,5 @@
 # JAVASCRIPT
 --exclude=node_modules
 --exclude=flow-typed
---exclude=.next
 --exclude=package-lock.json
 --exclude=yarn.lock

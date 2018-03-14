@@ -6,8 +6,9 @@ tags.lock
 tags.temp
 public/
 
-# GO
+# STATIC
 themes/
+static/
 
 # RUBY
 vendor/
@@ -16,6 +17,5 @@ Gemfile.lock
 # JAVASCRIPT
 node_modules/
 flow-typed/
-.next/
 package-lock.json
 yarn.lock
