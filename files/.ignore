@@ -4,13 +4,13 @@
 tags
 tags.lock
 tags.temp
-public/
 
 # STATIC
-themes/
+public/
 static/
 
 # RUBY
+public/
 vendor/
 Gemfile.lock
 

@@ -1,13 +1,13 @@
 # GENERAL
 --exclude=.git
 --exclude=.DS_Store
---exclude=public
 
 # STATIC
---exclude=themes
+--exclude=public
 --exclude=static
 
 # RUBY
+--exclude=public
 --exclude=vendor
 --exclude=Gemfile.lock
 
