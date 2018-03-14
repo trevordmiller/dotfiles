@@ -1,10 +1,13 @@
 # GENERAL
 --exclude=.git
 --exclude=.DS_Store
+--exclude=public
+
+# GO
+--exclude=themes
 
 # RUBY
 --exclude=vendor
---exclude=public
 --exclude=Gemfile.lock
 
 # JAVASCRIPT

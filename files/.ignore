@@ -4,10 +4,13 @@
 tags
 tags.lock
 tags.temp
+public/
+
+# GO
+themes/
 
 # RUBY
 vendor/
-public/
 Gemfile.lock
 
 # JAVASCRIPT
