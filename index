@@ -7,7 +7,6 @@ root_files=(
 	".bash_profile"
 	".eslintrc.json"
 	".gitconfig"
-	".gitignore_global"
 	".hushlogin"
 	".ignore"
 	".prettierrc.json"
