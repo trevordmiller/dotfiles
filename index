@@ -5,13 +5,13 @@ echo "Symlinking dotfiles"
 
 root_files=(
 	".bash_profile"
-	".eslintrc.json"
-	".gitconfig"
 	".hushlogin"
 	".ignore"
-	".prettierrc.json"
 	".tmux.conf"
 	".vimrc"
+	".gitconfig"
+	".prettierrc.json"
+	".eslintrc.json"
 	"com.googlecode.iterm2.plist"
 )
 for root_file in "${root_files[@]}"; do
