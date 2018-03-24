@@ -13,7 +13,6 @@ Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-vinegar'
 Plug 'SirVer/ultisnips'
-Plug 'ludovicchabant/vim-gutentags'
 Plug 'wakatime/vim-wakatime'
 call plug#end()
 

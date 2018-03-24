@@ -1,9 +1,6 @@
 # GENERAL
 .git/
 .DS_Store
-tags
-tags.lock
-tags.temp
 
 # JAVASCRIPT
 node_modules/
