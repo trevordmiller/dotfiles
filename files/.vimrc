@@ -34,8 +34,8 @@ let g:ale_fixers = {
 \  'sh': ['shfmt'],
 \  'javascript': ['prettier', 'eslint'],
 \  'json': ['prettier'],
-\  'css': ['prettier'],
 \  'markdown': ['prettier'],
+\  'css': ['prettier'],
 \}
 let g:ale_pattern_options = {
 \  'repos/edgar': {
@@ -43,8 +43,8 @@ let g:ale_pattern_options = {
 \      'sh': [],
 \      'javascript': ['eslint'],
 \      'json': [],
-\      'css': [],
 \      'markdown': [],
+\      'css': [],
 \    }
 \  },
 \}
