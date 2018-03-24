@@ -27,7 +27,6 @@ colorscheme nova
 let g:ale_echo_msg_format = '[%linter%] %s'
 let g:ale_linters = {
 \  'sh': ['shell'],
-\  'go': ['go vet', 'golint'],
 \  'python': ['pylint'],
 \  'ruby': ['rubocop'],
 \  'javascript': ['flow', 'eslint'],
@@ -35,7 +34,6 @@ let g:ale_linters = {
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {
 \  'sh': ['shfmt'],
-\  'go': ['gofmt'],
 \  'python': ['yapf'],
 \  'ruby': ['rubocop'],
 \  'javascript': ['prettier', 'eslint'],

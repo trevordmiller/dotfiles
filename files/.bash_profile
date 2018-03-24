@@ -4,10 +4,7 @@
 
 HOMEBREW_PATH=/usr/local/bin:/usr/local/sbin
 SHELL_SCRIPTS_PATH="$HOME/repos/shell-scripts/scripts"
-export GOROOT=/usr/local/opt/go/libexec
-export GOPATH=$HOME/go
-export PATH="$HOMEBREW_PATH:$SHELL_SCRIPTS_PATH:$GOROOT/bin:$GOPATH/bin:$PATH"
-
+export PATH="$HOMEBREW_PATH:$SHELL_SCRIPTS_PATH:$PATH"
 
 # ==================================================================
 # PROMPT
@@ -31,14 +28,12 @@ export PS1="$NEWLINE${COLOR_USER_CURRENT_STATE}$WORKING_DIRECTORY$NEWLINE${COLOR
 # VI BINDINGS
 set -o vi
 
-
 # ==================================================================
 # EDITOR
 # ==================================================================
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
-
 
 # ==================================================================
 # PACKAGE CONFIG
