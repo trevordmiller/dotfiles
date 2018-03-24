@@ -5,17 +5,14 @@ tags
 tags.lock
 tags.temp
 
-# STATIC
-public/
-static/
+# JAVASCRIPT
+node_modules/
+flow-typed/
+.next/
+package-lock.json
+yarn.lock
 
 # RUBY
 public/
 vendor/
 Gemfile.lock
-
-# JAVASCRIPT
-node_modules/
-flow-typed/
-package-lock.json
-yarn.lock
