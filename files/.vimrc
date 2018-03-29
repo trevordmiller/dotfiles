@@ -24,12 +24,12 @@ colorscheme nova
 
 " ALE
 let g:ale_echo_msg_format = '[%linter%] %s'
+let g:ale_fix_on_save = 1
 let g:ale_linters = {
 \  'sh': ['shell'],
 \  'typescript': ['tsserver', 'typecheck', 'tslint'],
 \  'javascript': ['flow', 'eslint'],
 \}
-let g:ale_fix_on_save = 1
 let g:ale_fixers = {
 \  'sh': ['shfmt'],
 \  'typescript': ['tslint', 'prettier'],
@@ -56,12 +56,13 @@ command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, '--path-to-ignore ~/.ignore
 
 " SHORTCUTS
 let mapleader=' '
+nnoremap <leader>d :ALEGoToDefinition<cr>
 nnoremap <leader>f :FZF<cr>
 nnoremap <leader>/ :Ag<space>
 nnoremap <leader>r :Buffers<cr>
 nnoremap <leader>: :History:<cr>
-nnoremap <leader>s :Snippets<cr>
 nnoremap <leader>e :Explore<cr>
+nnoremap <leader>s :Snippets<cr>
 
 
 " ==================================================================
