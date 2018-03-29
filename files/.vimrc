@@ -28,13 +28,12 @@ let g:ale_linters = {
 \  'sh': ['shell'],
 \  'typescript': ['tsserver', 'typecheck', 'tslint'],
 \  'javascript': ['flow', 'eslint'],
-\  'ruby': ['rubocop'],
 \}
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {
 \  'sh': ['shfmt'],
-\  'typescript': ['prettier', 'tslint'],
-\  'javascript': ['prettier', 'eslint'],
+\  'typescript': ['tslint', 'prettier'],
+\  'javascript': ['eslint', 'prettier'],
 \  'json': ['prettier'],
 \  'markdown': ['prettier'],
 \  'css': ['prettier'],
@@ -47,7 +46,7 @@ let g:ale_pattern_options = {
 \      'json': [],
 \      'markdown': [],
 \      'css': [],
-\    }
+\    },
 \  },
 \}
 
