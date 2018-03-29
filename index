@@ -10,8 +10,9 @@ root_files=(
 	".tmux.conf"
 	".vimrc"
 	".gitconfig"
-	".prettierrc.json"
+	"tslint.json"
 	".eslintrc.json"
+	".prettierrc.json"
 	"com.googlecode.iterm2.plist"
 )
 for root_file in "${root_files[@]}"; do

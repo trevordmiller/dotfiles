@@ -26,12 +26,14 @@ colorscheme nova
 let g:ale_echo_msg_format = '[%linter%] %s'
 let g:ale_linters = {
 \  'sh': ['shell'],
-\  'javascript': ['eslint', 'flow'],
+\  'typescript': ['tsserver', 'typecheck', 'tslint'],
+\  'javascript': ['flow', 'eslint'],
 \  'ruby': ['rubocop'],
 \}
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {
 \  'sh': ['shfmt'],
+\  'typescript': ['prettier', 'tslint'],
 \  'javascript': ['prettier', 'eslint'],
 \  'json': ['prettier'],
 \  'markdown': ['prettier'],
