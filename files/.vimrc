@@ -33,8 +33,8 @@ let g:ale_linters = {
 \}
 let g:ale_fixers = {
 \  'sh': ['shfmt'],
-\  'typescript': ['tslint', 'prettier'],
-\  'javascript': ['eslint', 'prettier'],
+\  'typescript': ['prettier', 'tslint'],
+\  'javascript': ['prettier', 'eslint'],
 \  'json': ['prettier'],
 \  'markdown': ['prettier'],
 \  'css': ['prettier'],
