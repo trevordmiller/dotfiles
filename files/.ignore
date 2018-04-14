@@ -1,6 +1,10 @@
 # GENERAL
 .git/
 .DS_Store
+*.jpg
+*.png
+*.gif
+*.mp4
 
 # JAVASCRIPT
 node_modules/
