@@ -8,12 +8,12 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
 Plug 'sheerun/vim-polyglot'
 Plug 'trevordmiller/nova-vim'
-Plug 'w0rp/ale'
-Plug '/usr/local/opt/fzf'
-Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-vinegar'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'SirVer/ultisnips'
+Plug 'w0rp/ale'
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 Plug 'wakatime/vim-wakatime'
 call plug#end()
 
@@ -57,11 +57,11 @@ command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, '--path-to-ignore ~/.ignore
 
 " SHORTCUTS
 let mapleader=' '
-nnoremap <leader>f :FZF<cr>
-nnoremap <leader>/ :Ag<space>
-nnoremap <leader>r :Buffers<cr>
-nnoremap <leader>: :History:<cr>
 nnoremap <leader>e :Explore<cr>
+nnoremap <leader>/ :Ag<space>
+nnoremap <leader>: :History:<cr>
+nnoremap <leader>f :FZF<cr>
+nnoremap <leader>b :Buffers<cr>
 nnoremap <leader>t :Tags<cr>
 nnoremap <leader>s :Snippets<cr>
 
