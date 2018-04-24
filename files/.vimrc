@@ -12,6 +12,7 @@ Plug 'w0rp/ale'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-vinegar'
+Plug 'ludovicchabant/vim-gutentags'
 Plug 'SirVer/ultisnips'
 Plug 'wakatime/vim-wakatime'
 call plug#end()
@@ -25,7 +26,6 @@ colorscheme nova
 " ALE
 let g:ale_echo_msg_format = '[%linter%] %s'
 let g:ale_fix_on_save = 1
-let g:ale_completion_enabled = 1
 let g:ale_linters = {
 \  'sh': ['shell'],
 \  'typescript': ['tsserver', 'typecheck', 'tslint'],
@@ -57,12 +57,12 @@ command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, '--path-to-ignore ~/.ignore
 
 " SHORTCUTS
 let mapleader=' '
-nnoremap <leader>d :ALEGoToDefinition<cr>
 nnoremap <leader>f :FZF<cr>
 nnoremap <leader>/ :Ag<space>
 nnoremap <leader>r :Buffers<cr>
 nnoremap <leader>: :History:<cr>
 nnoremap <leader>e :Explore<cr>
+nnoremap <leader>t :Tags<cr>
 nnoremap <leader>s :Snippets<cr>
 
 
