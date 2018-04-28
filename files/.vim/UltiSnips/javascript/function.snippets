@@ -1,5 +1,7 @@
 snippet function
-const $1 = ($2) => {
-  $0
+const ${1:`!v expand('%:h:t')`} = ($2) => {
+  return $0
 }
+
+export default $1
 endsnippet
