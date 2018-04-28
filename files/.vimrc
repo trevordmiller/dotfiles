@@ -17,9 +17,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'wakatime/vim-wakatime'
 call plug#end()
 
-" VIM-POLYGLOT
-let g:javascript_plugin_flow = 1
-
 " NOVA-VIM
 colorscheme nova
 
