@@ -1,7 +1,7 @@
 snippet reactComponentWithState
-import React from 'react'
+import React, { Component } from 'react'
 
-class ${1:`!v expand('%:h:t')`} extends React.Component {
+class ${1:`!v expand('%:h:t')`} extends Component {
   state = { 
     $2
   }

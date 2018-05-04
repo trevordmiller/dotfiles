@@ -1,0 +1,13 @@
+snippet reactComponentWithRenderProp
+import { Component } from 'react'
+
+class ${1:`!v expand('%:h:t')`} extends Component {
+  render() {
+    const { children } = this.props
+
+    return children($0)
+  }
+}
+
+export default $1
+endsnippet
