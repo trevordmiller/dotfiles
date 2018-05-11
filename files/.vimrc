@@ -27,7 +27,7 @@ let g:ale_fix_on_save = 1
 let g:ale_linters = {
 \  'sh': ['shell'],
 \  'typescript': ['tsserver', 'typecheck', 'tslint'],
-\  'javascript': ['flow', 'eslint'],
+\  'javascript': ['eslint'],
 \}
 let g:ale_fixers = {
 \  'sh': ['shfmt'],
@@ -36,17 +36,6 @@ let g:ale_fixers = {
 \  'json': ['prettier'],
 \  'markdown': ['prettier'],
 \  'css': ['prettier'],
-\}
-let g:ale_pattern_options = {
-\  'repos/edgar': {
-\    'ale_fixers': {
-\      'sh': [],
-\      'javascript': ['eslint'],
-\      'json': [],
-\      'markdown': [],
-\      'css': [],
-\    },
-\  },
 \}
 
 " FZF

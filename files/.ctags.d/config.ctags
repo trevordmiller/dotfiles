@@ -4,12 +4,5 @@
 
 # JAVASCRIPT
 --exclude=node_modules
---exclude=flow-typed
---exclude=.next
 --exclude=package-lock.json
---exclude=yarn.lock
-
-# RUBY
---exclude=public
---exclude=vendor
---exclude=Gemfile.lock
+--exclude=.next

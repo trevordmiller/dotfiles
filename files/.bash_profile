@@ -41,4 +41,3 @@ export EDITOR="$VISUAL"
 
 . /usr/local/etc/bash_completion
 alias ag='ag --path-to-ignore ~/.ignore --hidden'
-eval "$(rbenv init -)"
