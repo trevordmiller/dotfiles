@@ -11,7 +11,6 @@ root_files=(
 	".vimrc"
 	".gitconfig"
 	".gitignore"
-	"tslint.json"
 	".eslintrc.json"
 	".prettierrc.json"
 	"com.googlecode.iterm2.plist"
