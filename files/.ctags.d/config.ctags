@@ -7,3 +7,5 @@
 --exclude=package-lock.json
 --exclude=.next
 --exclude=storybook-static
+--exclude=cjs
+--exclude=es
