@@ -22,7 +22,6 @@ call plug#end()
 colorscheme nova
 
 " ALE
-let g:ale_echo_msg_format = '[%linter%] %s'
 let g:ale_fix_on_save = 1
 let g:ale_linters = {
 \  'sh': ['shell'],
