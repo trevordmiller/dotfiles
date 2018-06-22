@@ -4,5 +4,8 @@
     "node": true,
     "commonjs": true,
     "browser": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6
   }
 }
