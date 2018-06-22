@@ -70,3 +70,5 @@
   selected = normal
   separator = red bold
   linenumber = normal
+[url "https://"]
+  insteadOf = git://
