@@ -1,17 +1,17 @@
 snippet reactComponentWithState
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 class ${1:`!v expand('%:h:t')`} extends Component {
   state = { 
     $2
-  }
+  };
 
   render() {
     return (
       $0
-    )
+    );
   }
 }
 
-export default $1
+export default $1;
 endsnippet
