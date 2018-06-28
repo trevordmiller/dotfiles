@@ -1,7 +1,7 @@
 snippet test
-import ${1:`!v expand('%:h:t')`} from '.';
+import ${1:`!v expand('%:h:t')`} from ".";
 
-test('$2', () => {
+test("$2", () => {
   $0
   expect($3).toBe($4);
 });
