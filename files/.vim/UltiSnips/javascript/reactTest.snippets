@@ -1,0 +1,11 @@
+snippet test
+import React from "react";
+import { mount } from "enzyme";
+import ${1:`!v expand('%:h:t')`} from ".";
+
+test("$2", () => {
+  const wrapper = mount(<$1 $3);
+
+  expect(wrapper.$4)).toBe($5);
+});
+endsnippet
