@@ -4,6 +4,9 @@
 *.jpg
 *.png
 *.gif
+*.svg
+*.ico
+*.mp3
 *.mp4
 
 # JAVASCRIPT
