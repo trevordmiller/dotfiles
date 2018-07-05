@@ -1,11 +1,9 @@
 snippet reactComponent
 import React from "react";
 
-const ${1:`!v expand('%:h:t')`} = ({ $2 }) => {
-  return (
-    $0
-  );
-};
+const ${1:`!v expand('%:h:t')`} = ({ $2 }) => (
+  $0
+);
 
 export default $1;
 endsnippet
