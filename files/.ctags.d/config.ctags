@@ -5,6 +5,7 @@
 # JAVASCRIPT
 --exclude=node_modules
 --exclude=package-lock.json
+--exclude=__snapshots__
 --exclude=.next
 --exclude=storybook-static
 --exclude=cjs

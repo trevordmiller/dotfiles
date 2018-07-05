@@ -12,6 +12,7 @@
 # JAVASCRIPT
 node_modules/
 package-lock.json
+__snapshots__/
 .next/
 storybook-static/
 cjs/
