@@ -11,8 +11,6 @@ root_files=(
 	".vimrc"
 	".gitconfig"
 	".gitignore"
-	".eslintrc.json"
-	".prettierrc.json"
 	"com.googlecode.iterm2.plist"
 )
 for root_file in "${root_files[@]}"; do
