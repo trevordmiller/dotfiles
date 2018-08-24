@@ -10,6 +10,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'trevordmiller/nova-vim'
 Plug 'w0rp/ale'
 Plug 'janko-m/vim-test'
+Plug 'dgraham/vim-eslint'
 Plug 'tpope/vim-vinegar'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'SirVer/ultisnips'
@@ -42,6 +43,7 @@ command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, '--path-to-ignore ~/.ignore
 " SHORTCUTS
 let mapleader=' '
 nnoremap <leader>t :TestNearest<cr>
+nnoremap <leader>l :make .<cr>:copen<cr>:redraw!<cr>
 nnoremap <leader>e :Explore<cr>
 nnoremap <leader>] :Tags<cr>
 nnoremap <leader>s :Snippets<cr>
