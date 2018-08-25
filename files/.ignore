@@ -12,6 +12,7 @@
 # JAVASCRIPT
 node_modules/
 package-lock.json
+dist/
 docs/
 __snapshots__/
 .next/

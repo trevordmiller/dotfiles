@@ -5,6 +5,7 @@
 # JAVASCRIPT
 --exclude=node_modules
 --exclude=package-lock.json
+--exclude=dist
 --exclude=docs
 --exclude=__snapshots__
 --exclude=.next
