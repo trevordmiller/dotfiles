@@ -72,6 +72,10 @@ set clipboard^=unnamed
 " PERFORMANCE
 set synmaxcol=200
 
+" FILETYPE
+autocmd BufRead,BufNewFile .babelrc set syntax=json
+autocmd BufNewFile,BufRead *.mdx set syntax=markdown
+
 " MAKE
 set makeprg=./node_modules/.bin/eslint\ --no-color\ -f\ unix\ $*
 set errorformat=%A%f:%l:%c:%m,%-G%.%#
