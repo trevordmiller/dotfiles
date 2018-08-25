@@ -10,7 +10,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'trevordmiller/nova-vim'
 Plug 'w0rp/ale'
 Plug 'janko-m/vim-test'
-Plug 'dgraham/vim-eslint'
 Plug 'tpope/vim-vinegar'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'SirVer/ultisnips'
@@ -72,3 +71,7 @@ set clipboard^=unnamed
 
 " PERFORMANCE
 set synmaxcol=200
+
+" MAKE
+set makeprg=./node_modules/.bin/eslint\ --no-color\ -f\ unix\ $*
+set errorformat=%A%f:%l:%c:%m,%-G%.%#
