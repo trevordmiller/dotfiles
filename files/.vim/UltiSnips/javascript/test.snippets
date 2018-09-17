@@ -2,7 +2,9 @@ snippet test
 import ${1:`!v expand('%:h:t')`} from ".";
 
 test("$2", () => {
-  $0
-  expect($3).toBe($4);
+  const input = $3;
+  const output = $4;
+
+  expect($1(input)).toEqual(output);
 });
 endsnippet
