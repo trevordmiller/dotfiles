@@ -70,6 +70,9 @@ set backupdir=~/.vim/backup_files//
 " CLIPBOARD
 set clipboard^=unnamed
 
+" PERFORMANCE	
+set synmaxcol=200
+
 " MAKE
 set makeprg=./node_modules/.bin/eslint\ --no-color\ -f\ unix\ $*
 set errorformat=%A%f:%l:%c:%m,%-G%.%#
