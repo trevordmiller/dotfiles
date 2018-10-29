@@ -17,5 +17,3 @@ docs/
 __snapshots__/
 .next/
 storybook-static/
-cjs/
-es/
