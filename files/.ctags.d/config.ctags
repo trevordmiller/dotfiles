@@ -1,5 +1,5 @@
 # GENERAL
---exclude=.git/
+--exclude=.git
 --exclude=.DS_Store
 --exclude=*.jpg
 --exclude=*.png
@@ -10,10 +10,10 @@
 --exclude=*.mp4
 
 # JAVASCRIPT
---exclude=node_modules/
+--exclude=node_modules
 --exclude=package-lock.json
---exclude=dist/
---exclude=docs/
---exclude=__snapshots__/
---exclude=.next/
---exclude=storybook-static/
+--exclude=dist
+--exclude=docs
+--exclude=__snapshots__
+--exclude=.next
+--exclude=storybook-static
