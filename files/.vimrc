@@ -73,6 +73,9 @@ set clipboard^=unnamed
 " PERFORMANCE	
 set synmaxcol=200
 
+" TAGS
+nnoremap <C-]> g<C-]>
+
 " MAKE
 set makeprg=./node_modules/.bin/eslint\ --no-color\ -f\ unix\ $*
 set errorformat=%A%f:%l:%c:%m,%-G%.%#
