@@ -20,7 +20,6 @@
 
 # EDEN
 --exclude=packages/*/lib/*
---exclude=packages/*/parts/*
 --exclude=packages/eden-icons/src/icons/*
 --exclude=packages/eden-icons/src/index.js
 --exclude=packages/eden-icons-raw/src/index.js
