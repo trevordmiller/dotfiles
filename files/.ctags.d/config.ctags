@@ -17,6 +17,7 @@
 --exclude=__snapshots__
 --exclude=.next
 --exclude=storybook-static
+--exclude=cache
 
 # EDEN
 --exclude=packages/*/lib/*
