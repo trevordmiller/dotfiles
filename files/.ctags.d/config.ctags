@@ -1,3 +1,5 @@
+# Hoping to remove the need for this file with https://github.com/ludovicchabant/vim-gutentags/issues/208
+
 # GENERAL
 --exclude=.git
 --exclude=.DS_Store
@@ -19,7 +21,8 @@
 --exclude=storybook-static
 --exclude=cache
 
-# EDEN
+# FROM PROJECT SPECIFIC GITIGNORES
+# Hoping to improve these with https://github.com/universal-ctags/ctags/issues/1928
 --exclude=packages/*/lib/*
 --exclude=packages/eden-icons/src/icons/*
 --exclude=packages/eden-icons/src/index.js
