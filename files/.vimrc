@@ -24,13 +24,16 @@ colorscheme nova
 
 " ALE
 let g:ale_fix_on_save = 1
+let g:ale_completion_enabled = 1
 let g:ale_linters = {
 \  'sh': ['shell'],
 \  'javascript': ['eslint'],
+\  'typescript': ['eslint', 'tslint', 'tsserver', 'typecheck'],
 \}
 let g:ale_fixers = {
 \  'sh': ['shfmt'],
 \  'javascript': ['prettier', 'eslint'],
+\  'typescript': ['prettier', 'eslint', 'tslint'],
 \  'json': ['prettier'],
 \  'markdown': ['prettier'],
 \  'yaml': ['prettier'],
