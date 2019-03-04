@@ -7,7 +7,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
 Plug 'sheerun/vim-polyglot'
-Plug 'jxnblk/vim-mdx-js'
 Plug 'trevordmiller/nova-vim'
 Plug 'w0rp/ale'
 Plug 'janko-m/vim-test'
