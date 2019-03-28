@@ -11,7 +11,7 @@ root_files=(
 	".vimrc"
 	".gitconfig"
 	".gitignore"
-	"com.googlecode.iterm2.plist"
+	".alacritty.yml"
 )
 for root_file in "${root_files[@]}"; do
 	ln -s "$(pwd)/files/$root_file" "$HOME/$root_file"
