@@ -21,7 +21,6 @@ mkdir "$HOME/.ctags.d"
 root_directories=(
 	".ctags.d/"
 	".vim/"
-	".config/"
 )
 for root_directory in "${root_directories[@]}"; do
 	ln -s "$(pwd)/files/$root_directory"* "$HOME/$root_directory"
