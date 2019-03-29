@@ -34,3 +34,7 @@ window:
   padding:
     x: 20
     y: 20
+
+key_bindings:
+  - { key: A, mods: Alt, chars: "\x1ba" }
+  - { key: D, mods: Alt, chars: "\x1bd" }
