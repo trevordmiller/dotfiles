@@ -4,14 +4,13 @@ set -euo pipefail
 echo "Symlinking dotfiles"
 
 root_files=(
+	".alacritty.yml"
 	".bash_profile"
-	".hushlogin"
+	".gitconfig"
+	".gitignore"
 	".ignore"
 	".tmux.conf"
 	".vimrc"
-	".gitconfig"
-	".gitignore"
-	".alacritty.yml"
 )
 for root_file in "${root_files[@]}"; do
 	ln -s "$(pwd)/files/$root_file" "$HOME/$root_file"
