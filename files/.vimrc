@@ -73,9 +73,6 @@ set backupdir=~/.vim/backup_files//
 " CLIPBOARD
 set clipboard^=unnamed
 
-" PERFORMANCE	
-set synmaxcol=200
-
 " TAGS
 nnoremap <C-]> g<C-]>
 
