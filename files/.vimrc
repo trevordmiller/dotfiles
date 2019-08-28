@@ -2,7 +2,7 @@
 " PLUGINS
 " ==================================================================
 
-" VIM-PLUG
+" Plugins to use via vim-plug 
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
@@ -18,10 +18,10 @@ Plug 'junegunn/fzf.vim'
 Plug 'wakatime/vim-wakatime'
 call plug#end()
 
-" NOVA-VIM
+" Set color scheme
 colorscheme nova
 
-" ALE
+" Set linters / fixers
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
 let g:ale_linters = {
@@ -39,20 +39,36 @@ let g:ale_fixers = {
 \  'css': ['prettier'],
 \}
 
-" FZF
+" Apply ~/.ignore to fuzzy finding
 let $FZF_DEFAULT_COMMAND = 'ag --path-to-ignore ~/.ignore --hidden -g ""'
 command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, '--path-to-ignore ~/.ignore --hidden', <bang>0)
 
+" ==================================================================
 " SHORTCUTS
+" ==================================================================
+
+" Use space for shortcuts leader
 let mapleader=' '
+
+" Run tests
 nnoremap <leader>t :TestNearest<cr>
-nnoremap <leader>l :make .<cr>:copen<cr>:redraw!<cr>
+
+" Use project file explorer
 nnoremap <leader>e :Explore<cr>
-nnoremap <leader>] :Tags<cr>
-nnoremap <leader>s :Snippets<cr>
+
+" Use project file fuzzy finder
 nnoremap <leader>f :FZF<cr>
-nnoremap <leader>b :Buffers<cr>
+
+" Use project search fuzzy finder
 nnoremap <leader>/ :Ag<space>
+
+" Use project tags fuzzy finder
+nnoremap <leader>] :Tags<cr>
+
+" Use snippets fuzzy finder
+nnoremap <leader>s :Snippets<cr>
+
+" Use EX commands fuzzy finder
 nnoremap <leader>: :History:<cr>
 
 
@@ -60,22 +76,17 @@ nnoremap <leader>: :History:<cr>
 " CORE
 " ==================================================================
 
-" LINES
+" Show line numbers
 set number
+
+" Show active line
 set cursorline
 
-" HISTORY
+" Store history files in a single location
 set undofile
 set undodir=~/.vim/undo_files//
 set directory=~/.vim/swap_files//
 set backupdir=~/.vim/backup_files//
 
-" CLIPBOARD
+" Allow copy/paste between OS
 set clipboard^=unnamed
-
-" TAGS
-nnoremap <C-]> g<C-]>
-
-" MAKE
-set makeprg=./node_modules/.bin/eslint\ --no-color\ -f\ unix\ $*
-set errorformat=%A%f:%l:%c:%m,%-G%.%#
