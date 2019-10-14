@@ -11,6 +11,7 @@ root_files=(
 	".ignore"
 	".tmux.conf"
 	".vimrc"
+	"Brewfile"
 )
 for root_file in "${root_files[@]}"; do
 	ln -s "$(pwd)/files/$root_file" "$HOME/$root_file"

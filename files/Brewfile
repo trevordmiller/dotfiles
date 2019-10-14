@@ -1,0 +1,20 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "universal-ctags/universal-ctags"
+
+brew "bash"
+brew "bash-completion"
+brew "exercism"
+brew "fzf"
+brew "git"
+brew "reattach-to-user-namespace"
+brew "shfmt"
+brew "the_silver_searcher"
+brew "tmux"
+brew "vim"
+brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
+
+cask "1password"
+cask "alacritty"
+cask "rescuetime"
