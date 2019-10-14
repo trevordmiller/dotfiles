@@ -11,7 +11,6 @@ Plug 'trevordmiller/nova-vim'
 Plug 'w0rp/ale'
 Plug 'janko-m/vim-test'
 Plug 'tpope/vim-vinegar'
-Plug 'ludovicchabant/vim-gutentags'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'wakatime/vim-wakatime'
@@ -60,9 +59,6 @@ nnoremap <leader>f :FZF<cr>
 
 " Use project search fuzzy finder
 nnoremap <leader>/ :Ag<space>
-
-" Use project tags fuzzy finder
-nnoremap <leader>] :Tags<cr>
 
 " Use EX commands fuzzy finder
 nnoremap <leader>: :History:<cr>

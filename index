@@ -7,7 +7,6 @@ root_files=(
 	".alacritty.yml"
 	".bash_profile"
 	".gitconfig"
-	".gitignore"
 	".ignore"
 	".tmux.conf"
 	".vimrc"
@@ -15,12 +14,4 @@ root_files=(
 )
 for root_file in "${root_files[@]}"; do
 	ln -s "$(pwd)/files/$root_file" "$HOME/$root_file"
-done
-
-mkdir "$HOME/.ctags.d"
-root_directories=(
-	".ctags.d/"
-)
-for root_directory in "${root_directories[@]}"; do
-	ln -s "$(pwd)/files/$root_directory"* "$HOME/$root_directory"
 done
