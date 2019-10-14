@@ -12,7 +12,6 @@ Plug 'w0rp/ale'
 Plug 'janko-m/vim-test'
 Plug 'tpope/vim-vinegar'
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'SirVer/ultisnips'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'wakatime/vim-wakatime'
@@ -64,9 +63,6 @@ nnoremap <leader>/ :Ag<space>
 
 " Use project tags fuzzy finder
 nnoremap <leader>] :Tags<cr>
-
-" Use snippets fuzzy finder
-nnoremap <leader>s :Snippets<cr>
 
 " Use EX commands fuzzy finder
 nnoremap <leader>: :History:<cr>
