@@ -3,15 +3,12 @@ set -euo pipefail
 
 echo "Symlinking dotfiles"
 
-root_files=(
-	".alacritty.yml"
-	".bash_profile"
-	".gitconfig"
-	".ignore"
-	".tmux.conf"
-	".vimrc"
-	"Brewfile"
-)
-for root_file in "${root_files[@]}"; do
-	ln -s "$(pwd)/files/$root_file" "$HOME/$root_file"
+cd ./files
+
+shopt -s dotglob
+
+for root_file in *; do
+	ln -s "$(pwd)/$root_file" "$HOME/$root_file"
 done
+
+cd ..
