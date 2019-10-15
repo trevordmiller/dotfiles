@@ -15,4 +15,5 @@ brew "vim"
 
 cask "1password"
 cask "alacritty"
+cask "google-chrome"
 cask "rescuetime"
