@@ -2,14 +2,13 @@
 " PLUGINS
 " ==================================================================
 
-" Plugins to use via vim-plug 
+" Plugin repos
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
 Plug 'sheerun/vim-polyglot'
 Plug 'trevordmiller/nova-vim'
 Plug 'w0rp/ale'
-Plug 'janko-m/vim-test'
 Plug 'tpope/vim-vinegar'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
@@ -19,7 +18,7 @@ call plug#end()
 " Set color scheme
 colorscheme nova
 
-" Set linters / fixers
+" Set linters
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
 let g:ale_linters = {
@@ -40,29 +39,6 @@ let g:ale_fixers = {
 " Apply ~/.ignore to fuzzy finding
 let $FZF_DEFAULT_COMMAND = 'ag --path-to-ignore ~/.ignore --hidden -g ""'
 command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, '--path-to-ignore ~/.ignore --hidden', <bang>0)
-
-" ==================================================================
-" SHORTCUTS
-" ==================================================================
-
-" Use space for shortcuts leader
-let mapleader=' '
-
-" Run tests
-nnoremap <leader>t :TestNearest<cr>
-
-" Use project file explorer
-nnoremap <leader>e :Explore<cr>
-
-" Use project file fuzzy finder
-nnoremap <leader>f :FZF<cr>
-
-" Use project search fuzzy finder
-nnoremap <leader>/ :Ag<space>
-
-" Use EX commands fuzzy finder
-nnoremap <leader>: :History:<cr>
-
 
 " ==================================================================
 " CORE
