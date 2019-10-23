@@ -1,4 +1,4 @@
-# GENERAL
+# Ignore general binaries and generated output
 .git/
 .DS_Store
 *.jpg
@@ -9,7 +9,7 @@
 *.mp3
 *.mp4
 
-# JAVASCRIPT
+# Ignore JavaScript specific generated output
 node_modules/
 package-lock.json
 dist/

@@ -1,7 +1,9 @@
+# Use source repos
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/core"
+tap "homebrew/cask"
 
+# Sync global packages
 brew "bash"
 brew "bash-completion"
 brew "exercism"
@@ -13,6 +15,7 @@ brew "the_silver_searcher"
 brew "tmux"
 brew "vim"
 
+# Sync apps
 cask "1password"
 cask "alacritty"
 cask "rescuetime"

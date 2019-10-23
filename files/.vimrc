@@ -1,8 +1,4 @@
-" ==================================================================
-" PLUGINS
-" ==================================================================
-
-" Plugin repos
+" Sync plugin repos
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
@@ -39,10 +35,6 @@ let g:ale_fixers = {
 " Apply ~/.ignore to fuzzy finding
 let $FZF_DEFAULT_COMMAND = 'ag --path-to-ignore ~/.ignore --hidden -g ""'
 command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, '--path-to-ignore ~/.ignore --hidden', <bang>0)
-
-" ==================================================================
-" CORE
-" ==================================================================
 
 " Show line numbers
 set number
