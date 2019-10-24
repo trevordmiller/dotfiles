@@ -28,14 +28,15 @@ Plug 'w0rp/ale'
 Plug 'wakatime/vim-wakatime'
 call plug#end()
 
-" Apply linters
-let g:ale_fix_on_save = 1
+" Apply static analysis
 let g:ale_completion_enabled = 1
+let g:ale_linters_explicit = 1
 let g:ale_linters = {
 \  'sh': ['shell'],
 \  'javascript': ['eslint'],
-\  'typescript': ['eslint', 'tslint', 'tsserver', 'typecheck'],
+\  'typescript': ['eslint', 'tsserver', 'typecheck'],
 \}
+let g:ale_fix_on_save = 1
 let g:ale_fixers = {
 \  'sh': ['shfmt'],
 \  'javascript': ['prettier', 'eslint'],
