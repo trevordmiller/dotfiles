@@ -22,9 +22,6 @@ export EDITOR="$VISUAL"
 # Enable VI bindings
 set -o vi
 
-# Add ignore patterns to ag
-alias ag='ag --path-to-ignore ~/.ignore --hidden'
-
 # Use nvm for Node/npm JavaScript binaries
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"

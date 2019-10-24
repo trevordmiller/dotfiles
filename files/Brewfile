@@ -8,8 +8,6 @@ brew "bash"
 brew "bash-completion"
 brew "vim"
 brew "git"
-brew "the_silver_searcher"
-brew "fzf"
 brew "exercism"
 brew "shfmt"
 

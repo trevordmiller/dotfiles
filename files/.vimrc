@@ -13,6 +13,10 @@ set backupdir=~/.vim/backup_files//
 " Allow copy/paste between OS
 set clipboard^=unnamed
 
+" Ignore binaries and generated output
+set wildignore+=*.zip,*.png,*.jpg,*.gif,*.pdf,*.mp3,*.mp4,package-lock.json,*/.git/*,*/node_modules/*,*/.next/*
+set grepprg=grep\ -In\ --exclude=package-lock.json\ --exclude-dir={.git,node_modules,.next}
+
 " Sync plugin repos
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
@@ -21,8 +25,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'trevordmiller/nova-vim'
 Plug 'w0rp/ale'
 Plug 'tpope/vim-vinegar'
-Plug '/usr/local/opt/fzf'
-Plug 'junegunn/fzf.vim'
 Plug 'wakatime/vim-wakatime'
 call plug#end()
 
@@ -46,7 +48,3 @@ let g:ale_fixers = {
 \  'yaml': ['prettier'],
 \  'css': ['prettier'],
 \}
-
-" Apply ~/.ignore to fuzzy finding
-let $FZF_DEFAULT_COMMAND = 'ag --path-to-ignore ~/.ignore --hidden -g ""'
-command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, '--path-to-ignore ~/.ignore --hidden', <bang>0)
