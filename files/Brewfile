@@ -3,7 +3,7 @@ tap "homebrew/bundle"
 tap "homebrew/core"
 tap "homebrew/cask"
 
-# Sync global packages
+# Sync global general packages
 brew "bash"
 brew "bash-completion"
 brew "git"
@@ -14,6 +14,9 @@ brew "the_silver_searcher"
 brew "fzf"
 brew "exercism"
 brew "shfmt"
+
+# Sync global JavaScript packages
+brew "nvm"
 
 # Sync apps
 cask "1password"

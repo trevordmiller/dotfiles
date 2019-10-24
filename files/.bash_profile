@@ -21,11 +21,10 @@ export EDITOR="$VISUAL"
 
 # Use bash completion
 . /usr/local/etc/bash_completion
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # Add ignore patterns to ag
 alias ag='ag --path-to-ignore ~/.ignore --hidden'
 
 # Use nvm for Node/npm binaries
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
