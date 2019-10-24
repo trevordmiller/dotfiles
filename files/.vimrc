@@ -23,7 +23,6 @@ let g:netrw_banner = 0
 " Sync plugin repos
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-sleuth'
 Plug 'sheerun/vim-polyglot'
 Plug 'trevordmiller/nova-vim'
 Plug 'w0rp/ale'
