@@ -1,7 +1,6 @@
-# Extend path
-HOMEBREW_PATH=/usr/local/bin:/usr/local/sbin
+# Extend path with shell scripts
 SHELL_SCRIPTS_PATH="$HOME/repos/shell-scripts/scripts"
-export PATH="$HOMEBREW_PATH:$SHELL_SCRIPTS_PATH:$PATH"
+export PATH="$SHELL_SCRIPTS_PATH:$PATH"
 
 # Customize prompt
 export PS1="\$ "
