@@ -1,3 +1,18 @@
+" Show line numbers
+set number
+
+" Show active line
+set cursorline
+
+" Store history files in a single location
+set undofile
+set undodir=~/.vim/undo_files//
+set directory=~/.vim/swap_files//
+set backupdir=~/.vim/backup_files//
+
+" Allow copy/paste between OS
+set clipboard^=unnamed
+
 " Sync plugin repos
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
@@ -35,18 +50,3 @@ let g:ale_fixers = {
 " Apply ~/.ignore to fuzzy finding
 let $FZF_DEFAULT_COMMAND = 'ag --path-to-ignore ~/.ignore --hidden -g ""'
 command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, '--path-to-ignore ~/.ignore --hidden', <bang>0)
-
-" Show line numbers
-set number
-
-" Show active line
-set cursorline
-
-" Store history files in a single location
-set undofile
-set undodir=~/.vim/undo_files//
-set directory=~/.vim/swap_files//
-set backupdir=~/.vim/backup_files//
-
-" Allow copy/paste between OS
-set clipboard^=unnamed
