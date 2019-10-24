@@ -17,6 +17,9 @@ set clipboard^=unnamed
 set wildignore+=*.zip,*.png,*.jpg,*.gif,*.pdf,*.mp3,*.mp4,package-lock.json,*/.git/*,*/node_modules/*,*/.next/*
 set grepprg=grep\ -In\ --exclude=package-lock.json\ --exclude-dir={.git,node_modules,.next}
 
+" Remove netrw banner
+let g:netrw_banner = 0
+
 " Sync plugin repos
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
@@ -24,7 +27,6 @@ Plug 'tpope/vim-sleuth'
 Plug 'sheerun/vim-polyglot'
 Plug 'trevordmiller/nova-vim'
 Plug 'w0rp/ale'
-Plug 'tpope/vim-vinegar'
 Plug 'wakatime/vim-wakatime'
 call plug#end()
 
