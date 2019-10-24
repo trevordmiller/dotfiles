@@ -12,19 +12,19 @@ COLOR_STATEMENT='\[\033[01;33m\]'
 COLOR_RESET='\[\033[0m\]'
 export PS1="$NEWLINE${COLOR_USER_CURRENT_STATE}$WORKING_DIRECTORY$NEWLINE${COLOR_STATEMENT}$PROMPT_SYMBOL${COLOR_RESET} "
 
-# Enable VI bindings
-set -o vi
+# Use bash completion
+. /usr/local/etc/bash_completion
 
 # Use Vim as editor
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
-# Use bash completion
-. /usr/local/etc/bash_completion
+# Enable VI bindings
+set -o vi
 
 # Add ignore patterns to ag
 alias ag='ag --path-to-ignore ~/.ignore --hidden'
 
-# Use nvm for Node/npm binaries
+# Use nvm for Node/npm JavaScript binaries
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
