@@ -14,7 +14,7 @@ call plug#end()
 " Set color scheme
 colorscheme nova
 
-" Set linters
+" Apply linters
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
 let g:ale_linters = {
@@ -25,7 +25,7 @@ let g:ale_linters = {
 let g:ale_fixers = {
 \  'sh': ['shfmt'],
 \  'javascript': ['prettier', 'eslint'],
-\  'typescript': ['prettier', 'eslint', 'tslint'],
+\  'typescript': ['prettier', 'eslint'],
 \  'json': ['prettier'],
 \  'markdown': ['prettier'],
 \  'yaml': ['prettier'],
