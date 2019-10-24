@@ -24,13 +24,9 @@ let g:netrw_banner = 0
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
 Plug 'sheerun/vim-polyglot'
-Plug 'trevordmiller/nova-vim'
 Plug 'w0rp/ale'
 Plug 'wakatime/vim-wakatime'
 call plug#end()
-
-" Set color scheme
-colorscheme nova
 
 " Apply linters
 let g:ale_fix_on_save = 1
