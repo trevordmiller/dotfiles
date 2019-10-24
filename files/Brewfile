@@ -10,8 +10,6 @@ brew "vim"
 brew "git"
 brew "the_silver_searcher"
 brew "fzf"
-brew "tmux"
-brew "reattach-to-user-namespace"
 brew "exercism"
 brew "shfmt"
 
