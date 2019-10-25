@@ -23,8 +23,9 @@ let g:netrw_banner = 0
 " Sync plugin repos
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
-Plug 'sheerun/vim-polyglot'
 Plug 'w0rp/ale'
+Plug 'sheerun/vim-polyglot'
+Plug 'owickstrom/vim-colors-paramount'
 Plug 'wakatime/vim-wakatime'
 call plug#end()
 
@@ -46,3 +47,7 @@ let g:ale_fixers = {
 \  'yaml': ['prettier'],
 \  'css': ['prettier'],
 \}
+
+" Apply color scheme
+set background=light
+colorscheme paramount
