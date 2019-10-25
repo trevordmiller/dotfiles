@@ -14,8 +14,8 @@ set backupdir=~/.vim/backup_files//
 set clipboard^=unnamed
 
 " Ignore binaries and generated output
-set wildignore+=*.zip,*.png,*.jpg,*.gif,*.pdf,*.mp3,*.mp4,package-lock.json,*/.git/*,*/node_modules/*,*/.next/*
-set grepprg=grep\ -In\ --exclude=package-lock.json\ --exclude-dir={.git,node_modules,.next}
+set wildignore+=*.zip,*.png,*.jpg,*.gif,*.pdf,*.mp3,*.mp4,package-lock.json,*/.git/*,*/node_modules/*,*/.next/*,*/public/*
+set grepprg=grep\ -In\ --exclude=package-lock.json\ --exclude-dir={.git,node_modules,.next,public}
 
 " Remove netrw banner
 let g:netrw_banner = 0
