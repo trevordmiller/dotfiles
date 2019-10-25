@@ -9,7 +9,6 @@ brew "bash-completion"
 brew "vim"
 brew "git"
 brew "exercism"
-brew "shfmt"
 
 # Sync global JavaScript packages
 brew "nvm"
