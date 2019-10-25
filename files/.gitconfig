@@ -1,10 +1,6 @@
 [core]
   editor = vim
-[url "https://"]
-  insteadOf = git://
 [user]
   name = Trevor D. Miller
   email = 5497885+trevordmiller@users.noreply.github.com
   useconfigonly = true
-[github]
-  user = trevordmiller
