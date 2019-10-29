@@ -26,7 +26,6 @@ Plug 'tpope/vim-sensible'
 Plug 'w0rp/ale'
 Plug 'sheerun/vim-polyglot'
 Plug 'owickstrom/vim-colors-paramount'
-Plug 'wakatime/vim-wakatime'
 call plug#end()
 
 " Apply static analysis

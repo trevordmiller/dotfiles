@@ -15,4 +15,3 @@ brew "nvm"
 
 # Sync apps
 cask "1password"
-cask "rescuetime"
