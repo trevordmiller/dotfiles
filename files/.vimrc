@@ -46,5 +46,4 @@ let g:ale_fixers = {
 \}
 
 " Apply color scheme
-set background=light
 colorscheme paramount
