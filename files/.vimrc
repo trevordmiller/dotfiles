@@ -12,22 +12,13 @@ Plug 'sheerun/vim-polyglot'
 
 " Integrate with static analysis tools
 Plug 'dense-analysis/ale'
-
-" Use custom color scheme
-Plug 'owickstrom/vim-colors-paramount'
 call plug#end()
 
 " Remove clutter from file exploring
 let g:netrw_banner = 0
 
-" Apply custom color scheme
-colorscheme paramount
-
 " Show line numbers
 set number
-
-" Show active line
-set cursorline
 
 " Persist history
 set undofile
