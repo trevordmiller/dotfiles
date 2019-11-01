@@ -24,7 +24,7 @@ let g:netrw_banner = 0
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 Plug 'sheerun/vim-polyglot'
 Plug 'owickstrom/vim-colors-paramount'
 call plug#end()
