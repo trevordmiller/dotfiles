@@ -1,17 +1,17 @@
 " Sync plugins with repos
 call plug#begin('~/.vim/plugged')
 
-" Enable sensible defaults
-Plug 'tpope/vim-sensible'
+" Normalize defaults
+Plug 'https://github.com/tpope/vim-sensible'
 
 " Automate indenting
-Plug 'tpope/vim-sleuth'
+Plug 'https://github.com/tpope/vim-sleuth'
 
-" Support modern languages
-Plug 'sheerun/vim-polyglot'
+" Enhance languages
+Plug 'https://github.com/sheerun/vim-polyglot'
 
-" Integrate with static analysis tools
-Plug 'dense-analysis/ale'
+" Integrate with static analysis
+Plug 'https://github.com/dense-analysis/ale'
 call plug#end()
 
 " Remove clutter from file exploring
