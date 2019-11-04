@@ -20,9 +20,6 @@ call plug#end()
 " Enable color scheme
 colorscheme bruin 
 
-" Remove clutter from file exploring
-let g:netrw_banner = 0
-
 " Persist history
 set undofile
 set undodir=~/.vim/undo_files//
