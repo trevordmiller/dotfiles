@@ -23,9 +23,6 @@ colorscheme bruin
 " Remove clutter from file exploring
 let g:netrw_banner = 0
 
-" Show line numbers
-set number
-
 " Persist history
 set undofile
 set undodir=~/.vim/undo_files//
