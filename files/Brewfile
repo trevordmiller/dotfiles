@@ -1,4 +1,4 @@
-# Use source repos
+# Sync formulae with repos
 tap "homebrew/bundle"
 tap "homebrew/core"
 tap "homebrew/cask"
