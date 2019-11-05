@@ -5,7 +5,6 @@ tap "homebrew/cask"
 
 # Sync global general packages
 brew "bash"
-brew "bash-completion"
 brew "vim"
 brew "git"
 brew "exercism"
