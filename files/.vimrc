@@ -12,13 +12,7 @@ Plug 'https://github.com/sheerun/vim-polyglot'
 
 " Integrate with static analysis
 Plug 'https://github.com/dense-analysis/ale'
-
-" Add a color scheme
-Plug 'https://git.sr.ht/~romainl/vim-bruin'
 call plug#end()
-
-" Enable color scheme
-colorscheme bruin 
 
 " Persist history
 set undofile
