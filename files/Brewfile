@@ -8,7 +8,6 @@ brew "bash"
 brew "vim"
 brew "git"
 brew "nvm"
-brew "exercism"
 
 # Sync apps
 cask "1password"
