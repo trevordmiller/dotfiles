@@ -4,7 +4,6 @@ tap "homebrew/core"
 tap "homebrew/cask"
 
 # Sync global packages
-brew "bash"
 brew "vim"
 brew "git"
 brew "node"
