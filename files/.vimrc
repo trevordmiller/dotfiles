@@ -14,7 +14,7 @@ Plug 'https://github.com/sheerun/vim-polyglot'
 Plug 'https://github.com/dense-analysis/ale'
 
 " Add color scheme
-Plug 'arcticicestudio/nord-vim'
+Plug 'https://github.com/arcticicestudio/nord-vim'
 call plug#end()
 
 " Ignore generated files
