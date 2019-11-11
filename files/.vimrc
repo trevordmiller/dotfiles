@@ -1,22 +1,22 @@
-" Sync plugins with repos
+" Sync plugins with git repos
 call plug#begin('~/.vim/plugged')
 
-" Normalize defaults
+" Enhance core defaults to work consistently
 Plug 'https://github.com/tpope/vim-sensible'
 
-" Automate indenting
+" Enhance indenting to indent automatically
 Plug 'https://github.com/tpope/vim-sleuth'
 
-" Enhance languages
+" Enhance languages to use updated language packs
 Plug 'https://github.com/sheerun/vim-polyglot'
 
 " Enhance wildignore to ignore .gitignore items
 Plug 'https://github.com/octref/RootIgnore'
 
-" Integrate with static analysis
+" Enhance statics analysis to use installed programs
 Plug 'https://github.com/dense-analysis/ale'
 
-" Add color scheme
+" Enhance color scheme to use terminal color palette
 Plug 'https://github.com/arcticicestudio/nord-vim'
 call plug#end()
 
@@ -24,5 +24,5 @@ call plug#end()
 set grepprg=git\ --no-pager\ grep\ --no-color\ -n\ $*
 set grepformat=%f:%l:%m,%m\ %f\ match%ts,%f
 
-" Set color scheme
+" Enhance color scheme to use terminal color palette
 colorscheme nord
