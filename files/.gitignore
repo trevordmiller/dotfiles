@@ -1,5 +1,0 @@
-# Ignore OS artifacts
-.DS_Store
-
-# Ignore editor artifacts
-*.swp
